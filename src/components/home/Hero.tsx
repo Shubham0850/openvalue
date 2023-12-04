@@ -12,7 +12,7 @@ const Hero = () => {
         >
           <Heading
             as="h1"
-            width={{ base: "100%", md: "70%" }}
+            width={{ base: "90%", md: "70%" }}
             fontSize={{ base: "2xl", md: "64px" }}
             mb={{ base: 4, md: 4 }}
           >
@@ -20,7 +20,7 @@ const Hero = () => {
           </Heading>
           <Text
             fontSize={{ base: "md", md: "18px" }}
-            width={{ base: "100%", md: "55%" }}
+            width={{ base: "90%", md: "55%" }}
             mb={{ base: 8, md: 8 }}
           >
             Open value is a marketplace for top-tier tokenized assets across
