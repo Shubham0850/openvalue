@@ -15,6 +15,8 @@ const EarlyAccess = () => {
           as="h2"
           fontSize={{ base: "2xl", md: "4xl" }}
           fontWeight="bold"
+          width={{ base: "100%", md: "60%" }}
+          margin="auto"
           mb={{ base: 4, md: 8 }}
         >
           A platform to buy and sell modernized Financial Assets
