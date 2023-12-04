@@ -1,4 +1,4 @@
-import { Container, Box, Text, Flex, Input, Button } from "@chakra-ui/react";
+import { Container, Box, Text, Flex, Input } from "@chakra-ui/react";
 import { CiMail } from "react-icons/ci";
 
 const Newsletter = () => {
