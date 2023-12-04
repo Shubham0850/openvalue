@@ -24,27 +24,18 @@ const reasons = [
   },
 ];
 
-function WhyUs() {
+function AssetOwner() {
   return (
     <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
       <Box textAlign="center" mb={{ base: 6, md: 8 }}>
         <Text
           as="h2"
-          fontSize={{ base: "32px", md: "48px" }}
+          fontSize={{ base: "24px", md: "36px" }}
           fontWeight="600"
-          mb={{ base: 4, md: 6 }}
+          mb={{ base: 10, md: 28 }}
           color="#121212"
         >
-          Why Us?
-        </Text>
-        <Text
-          fontSize={{ base: "16px", md: "18px" }}
-          fontWeight="300px"
-          color="#616161"
-          mb={{ base: 10, md: 28 }}
-        >
-          Open value is a marketplace for top tier tokenized assets across
-          various sectors
+          We provide liquidation to Asset owners 
         </Text>
       </Box>
       <Flex justifyContent="center" alignItems="flex-start" flexWrap="wrap">
@@ -75,4 +66,4 @@ function WhyUs() {
   );
 }
 
-export default WhyUs;
+export default AssetOwner;

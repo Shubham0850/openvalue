@@ -1,3 +1,4 @@
+import AssetOwner from "@/components/home/AssetOwner";
 import DiscoverAssets from "@/components/home/DiscoverAssets";
 import EarlyAccess from "@/components/home/EarlyAccess";
 import FAQ from "@/components/home/FAQ";
@@ -24,6 +25,7 @@ export default function Home() {
       <Hero />
       <WhyUs />
       <DiscoverAssets />
+      <AssetOwner />
       <EarlyAccess />
       <FAQ />
       <JoinCommunity />
