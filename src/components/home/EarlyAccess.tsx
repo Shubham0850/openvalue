@@ -10,7 +10,7 @@ const EarlyAccess = () => {
       py={{ base: 8, md: 16 }}
       textAlign="center"
     >
-      <Container maxW="1300">
+      <Container maxW={{ base: "100%", md: "1300px" }}>
         <Text
           as="h2"
           fontSize={{ base: "2xl", md: "4xl" }}
