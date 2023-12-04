@@ -1,4 +1,4 @@
-import { Container, Text, Flex } from "@chakra-ui/react";
+import { Container, Text, Flex, Box } from "@chakra-ui/react";
 import { FaRegCreditCard } from "react-icons/fa";
 import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 import { FaHouseChimney } from "react-icons/fa6";
@@ -8,26 +8,31 @@ import { GiAtom } from "react-icons/gi";
 import { BiSolidCollection } from "react-icons/bi";
 
 const DiscoverAssets = () => {
+  const iconColor = "#C26F09";
+
   const assetData = [
     {
-      icon: <FaRegCreditCard size={40} color="#616161" />,
+      icon: <FaRegCreditCard size={25} color={iconColor} />,
       heading: "Debit Securities",
     },
     {
-      icon: <BsFillCreditCard2FrontFill size={40} color="#616161" />,
+      icon: <BsFillCreditCard2FrontFill size={25} color={iconColor} />,
       heading: "Private Credit",
     },
     {
-      icon: <FaHouseChimney size={40} color="#616161" />,
+      icon: <FaHouseChimney size={25} color={iconColor} />,
       heading: "Real Estate",
     },
     {
-      icon: <AiFillGolden size={40} color="#616161" />,
+      icon: <AiFillGolden size={25} color={iconColor} />,
       heading: "Precious Metals",
     },
-    { icon: <GiAtom size={40} color="#616161" />, heading: "Carbon Credits" },
     {
-      icon: <BiSolidCollection size={40} color="#616161" />,
+      icon: <GiAtom size={25} color={iconColor} />,
+      heading: "Carbon Credits",
+    },
+    {
+      icon: <BiSolidCollection size={25} color={iconColor} />,
       heading: "Collectible",
     },
   ];
@@ -62,10 +67,18 @@ const DiscoverAssets = () => {
               align="center"
               width={{ base: "100%", md: "33%" }}
               textAlign="center"
-              mb={6}
             >
-              {icon}
-              <Text fontSize="lg" fontWeight="600" mt={2}>
+              <Text bgColor="#5A421E" padding="8px" borderRadius="7px">
+                {icon}
+              </Text>
+
+              <Text
+                fontSize="24px"
+                fontWeight="600"
+                mt={2}
+                color="#000"
+                mb={16}
+              >
                 {heading}
               </Text>
             </Flex>
