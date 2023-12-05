@@ -1,5 +1,5 @@
-import { Container, Box, Text, Flex } from "@chakra-ui/react";
-import { FaDiscord, FaTelegramPlane, FaBloggerB } from "react-icons/fa";
+import { Container, Box, Text, Flex, Image } from "@chakra-ui/react";
+import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const JoinCommunity = () => {
@@ -21,6 +21,7 @@ const JoinCommunity = () => {
           fontSize={{ base: "28px", md: "32px" }}
           fontWeight="500"
           color="#121212"
+          marginBottom={{ base: "50px" }}
         >
           Join our community of tokenization supporters
         </Text>
@@ -28,21 +29,26 @@ const JoinCommunity = () => {
       <Flex
         justifyContent="center"
         alignItems="center"
+        flexDirection={{ base: "column", md: "row" }}
         flexWrap="wrap"
         gap={{ base: 4, md: 8 }}
       >
-        <Box style={styles.background}>
-          <FaXTwitter style={{ fontSize: "30px", width: "30px" }} />
-        </Box>
-        <Box style={styles.background}>
-          <FaDiscord style={{ fontSize: "30px", width: "30px" }} />
-        </Box>
-        <Box style={styles.background}>
-          <FaTelegramPlane style={{ fontSize: "30px", width: "30px" }} />
-        </Box>
-        <Box style={styles.background}>
-          <FaBloggerB style={{ fontSize: "30px", width: "30px" }} />
-        </Box>
+        <Flex gap={{ base: 14, md: 8 }} mb={{ base: "24px", md: "0px" }}>
+          <Box style={styles.background}>
+            <FaXTwitter style={{ fontSize: "46px", width: "46px" }} />
+          </Box>
+          <Box style={styles.background}>
+            <FaDiscord style={{ fontSize: "46px", width: "46px" }} />
+          </Box>
+        </Flex>
+        <Flex gap={{ base: 14, md: 8 }}>
+          <Box style={styles.background}>
+            <FaTelegramPlane style={{ fontSize: "46px", width: "46px" }} />
+          </Box>
+          <Box style={styles.background}>
+            <Image src="blog.png" boxSize="46px" />
+          </Box>
+        </Flex>
       </Flex>
     </Container>
   );
