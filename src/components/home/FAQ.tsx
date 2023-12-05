@@ -75,8 +75,7 @@ const FAQ = () => {
               width={{ base: "72%", md: "100%" }}
               margin="auto"
             >
-              Got questions? We've got answers. If you don't find what you're
-              looking for, feel free to contact us.
+              {"Got questions? We've got answers. If you don't find what you're looking for, feel free to contact us."}
             </Text>
           </Box>
 
