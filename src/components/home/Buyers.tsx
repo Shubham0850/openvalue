@@ -52,12 +52,12 @@ function RenderReason({
 function Buyers() {
   return (
     <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
-      <Box textAlign="center" mb={{ base: 6, md: 8 }}>
+      <Box textAlign="center">
         <Text
           as="h2"
           fontSize={{ base: "24px", md: "36px" }}
           fontWeight="600"
-          mb={{ base: 10, md: 14 }}
+          mb={{ base: 4, md: 6 }}
           color="#121212"
           width={{ base: "65%" }}
           margin="auto"
@@ -65,6 +65,18 @@ function Buyers() {
           We offer wide range of asset class to Buyers
         </Text>
       </Box>
+      <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
+          <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
+          <defs>
+            <radialGradient id="paint0_radial_475_2385" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(776 1.43883) rotate(179.999) scale(775 937024)">
+              <stop stop-color="white" />
+              <stop offset="0.463542" stop-color="#74C69D" />
+              <stop offset="1" stop-color="white" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </Flex>
       <Flex
         flexDirection={{ base: "column", md: "row" }}
         justifyContent="center"

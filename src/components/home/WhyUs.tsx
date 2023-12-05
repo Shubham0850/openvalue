@@ -1,4 +1,4 @@
-import { Container, Box, Text, Flex } from "@chakra-ui/react";
+import { Container, Box, Text, Flex, Grid } from "@chakra-ui/react";
 import React from "react";
 
 function RenderReason({
@@ -14,9 +14,9 @@ function RenderReason({
       align="center"
       justify="center"
       textAlign="center"
-      width={{ base: "73%", md: "25%" }}
+      width="100%"
       gap={{ md: "3" }}
-      mt="20px"
+      padding={8}
     >
       <Text
         as="h3"
@@ -50,7 +50,7 @@ function WhyUs() {
           fontSize={{ base: "12px", md: "16px", lg: "18px" }}
           fontWeight="300"
           color="#616161"
-          mb={{ base: 6, md: 28 }}
+          mb={{ base: 6, md: 20 }}
           margin="auto"
           width={{ base: "70%", md: "70%" }}
         >
@@ -58,64 +58,40 @@ function WhyUs() {
           various sectors.
         </Text>
       </Box>
-      <Flex
-        flexDirection={{ base: "column", md: "row" }}
-        justifyContent="center"
-        alignItems="center"
-        gap={{ md: "20", base: "10" }}
-        marginBottom={{ base: "40px", md: "80px" }}
-      >
-        <RenderReason
-          key="data1"
-          title="Access to Broad Assets"
-          description="Retail investors can gain access to alternative investments having sustainable returns backed by real assets"
-        />
-        {/* Vertical Line */}
-        {/* <Box
-          height="50%"
-          width="2px"
-          bg="gray.400"
-          display={{ base: "none" }}
-        /> */}
-        <RenderReason
-          key="data2"
-          title="Fractionalization"
-          description="Investors can own a fractional asset and be an owner in assets that typically are inaccessible without fractionalization. // reword "
-        />
-      </Flex>
-      {/* Horizontal Line */}
-      <Box
-        width="40%"
-        height="1px"
-        margin="auto"
-        bg="gray.400"
-        marginBottom={{ md: "80px" }}
-        display={{ base: "none", md: "block" }}
-      />
-      <Flex
-        flexDirection={{ base: "column", md: "row" }}
-        justifyContent="center"
-        alignItems="center"
-        gap={{ md: "20", base: "10" }}
-      >
-        <RenderReason
-          key="data3"
-          title="Transparency"
-          description="All the transactions are recorded on the blockchain, making it fully transparent and immutable of ownership."
-        />
-        {/* Vertical Line */}
-        {/* <Box
-          height="100%"
-          width="2px"
-          bg="black"
-          display={{ base: "none", md: "block" }}
-        /> */}
-        <RenderReason
-          key="data4"
-          title="Instant Settlement"
-          description="Harness the power of DLT technologies to get instant settlements along with high liquidity and lower fees."
-        />
-      </Flex>
+
+      <Box className="relative">
+        <Grid
+          maxW={800}
+          mx="auto"
+          gap={10}
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+        >
+          <RenderReason
+            key="data1"
+            title="Access to Broad Assets"
+            description="Retail investors can gain access to alternative investments having sustainable returns backed by real assets"
+          />
+          <RenderReason
+            key="data2"
+            title="Fractionalization"
+            description="Investors can own a fractional asset and be an owner in assets that typically are inaccessible without fractionalization. // reword "
+          />
+          <RenderReason
+            key="data3"
+            title="Transparency"
+            description="All the transactions are recorded on the blockchain, making it fully transparent and immutable of ownership."
+          />
+          <RenderReason
+            key="data4"
+            title="Instant Settlement"
+            description="Harness the power of DLT technologies to get instant settlements along with high liquidity and lower fees."
+          />
+        </Grid>
+
+        <Box className="absolute top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-center d-none">
+          <img src="/gradient/plus-line.svg" alt="plus-line" width="100%" className="-m-10" />
+        </Box>
+      </Box>
     </Container>
   );
 }

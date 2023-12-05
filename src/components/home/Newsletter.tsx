@@ -23,20 +23,23 @@ const Newsletter = () => {
           mt={4}
         >
           Get the latest feed about Platform updates, tokenization, and General
-          web3 and Financial markets information. 
+          web3 and Financial markets information.
         </Text>
       </Box>
       <Flex
-        justifyContent="center"
-        alignItems="center"
+        width={"100%"}
+        justifyContent={"center"}
+        alignItems={"center"}
         flexDirection={{ base: "column", md: "row" }}
         gap={{ base: 4, md: 8 }}
       >
         <Flex
-          align="center"
+          width={"100%"}
+          align={{ base: "center", md: "center" }}
           border="1px solid rgba(97, 97, 97, 0.5)"
           borderRadius="5px"
           p={2}
+          maxWidth={{ base: "100%", md: "500px" }}
           mb={{ base: 4, md: 0 }}
         >
           <MdMailOutline size="30px" color="#BDBDBD" />
