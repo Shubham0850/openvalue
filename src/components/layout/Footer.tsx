@@ -1,4 +1,4 @@
-import { Box, Container, Text, Flex, Link } from "@chakra-ui/react";
+import { Box, Container, Text, Flex, Link, Image } from "@chakra-ui/react";
 
 const Footer = () => {
   const style = {
@@ -6,7 +6,7 @@ const Footer = () => {
       textDecoration: "none",
 
       marginBottom: "4px",
-      fontSize: "14px",
+      fontSize: "16px",
       color: "#616161",
     },
   };
@@ -15,23 +15,35 @@ const Footer = () => {
     <Box bg="white" color="#121212" py={{ base: 8, md: 16 }} textAlign="left">
       <Container maxW={1300}>
         <Flex
-          direction={{ base: "column", md: "row" }}
+          direction={{ base: "column-reverse", md: "row" }}
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "flex-start" }}
           mb={{ base: 8, md: 12 }}
         >
           <Box
+            mt={{ base: 8, md: 0 }}
             flex={{ base: "0 0 100%", md: "0 0 40%" }}
             mb={{ base: 8, md: 0 }}
           >
             <Box textAlign="center">
-              <Text fontSize={{ base: "2xl", md: "36px" }}>Openvalue</Text>
-              <Text fontSize="sm">Developed by</Text>
-              <Text fontSize={{ base: "2xl", md: "30px" }}>ASVALABS</Text>
+              <Text fontSize={{ base: "24px", md: "36px" }}>Openvalue</Text>
+              <Text fontSize={{ base: "14px", md: "14px" }}>
+                Developed by{" "}
+                <Image
+                  src="asvalogo.svg"
+                  alt="ASVALABS Logo"
+                  margin="auto"
+                  marginTop="10px"
+                />
+              </Text>
             </Box>
           </Box>
           <Flex direction="column" align={{ base: "center", md: "flex-start" }}>
-            <Text fontSize="lg" fontWeight="bold" mb={4}>
+            <Text
+              fontSize={{ base: "14px", md: "16px" }}
+              fontWeight={{ base: "400", md: "600" }}
+              mb={{ base: "2", md: "4" }}
+            >
               About
             </Text>
             <Link href="#" style={style.link}>
@@ -51,7 +63,11 @@ const Footer = () => {
             </Link>
           </Flex>
           <Flex direction="column" align={{ base: "center", md: "flex-start" }}>
-            <Text fontSize="lg" fontWeight="bold" mb={4}>
+            <Text
+              fontSize={{ base: "14px", md: "16px" }}
+              fontWeight={{ base: "400", md: "600" }}
+              mb={{ base: "2", md: "4" }}
+            >
               General
             </Text>
             <Link href="#" style={style.link}>
@@ -62,7 +78,11 @@ const Footer = () => {
             </Link>
           </Flex>
           <Flex direction="column" align={{ base: "center", md: "flex-start" }}>
-            <Text fontSize="lg" fontWeight="bold" mb={4}>
+            <Text
+              fontSize={{ base: "14px", md: "16px" }}
+              fontWeight={{ base: "400", md: "600" }}
+              mb={{ base: "2", md: "4" }}
+            >
               Legal
             </Text>
             <Link href="#" style={style.link}>
