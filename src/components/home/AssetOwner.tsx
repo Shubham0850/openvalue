@@ -11,15 +11,15 @@ function RenderReason({
   return (
     <Flex
       flexDirection="column"
-      align={{ base: "center", md: "start" }}
+      align={{ base: "start", md: "start" }}
       justify="center"
-      textAlign={{ base: "center", md: "start" }}
+      textAlign={{ base: "start", md: "start" }}
       margin={{ base: "auto", md: "0" }}
       width={{ base: "73%", md: "22%" }}
       gap={{ md: "3", base: "2" }}
       mt="20px"
     >
-      <Flex gap={4} align="center">
+      <Flex gap={4} align="center" marginLeft="-35px">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -57,8 +57,10 @@ function AssetOwner() {
           as="h2"
           fontSize={{ base: "24px", md: "36px" }}
           fontWeight="600"
-          mb={{ base: 10, md: 14 }}
+          mb={{ base: 2, md: 2 }}
           color="#121212"
+          width={{ base: "70%" }}
+          margin="auto"
         >
           We provide liquidation to Asset owners
         </Text>
