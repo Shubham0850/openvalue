@@ -19,6 +19,8 @@ import React from "react";
 
 const styles = {
   deskLink: {
+    fontSize: "20px",
+    fontWeight: "500",
     _hover: {
       textDecoration: "none",
     },
@@ -58,7 +60,7 @@ function Nav() {
         bg="rgba(19, 19, 19, 0.03)"
         boxShadow="0px -1px 1px 0px rgba(0, 0, 0, 0.10) inset"
       >
-        <Container maxW={1300}>
+        <Container maxW={1200}>
           <Flex
             as={"nav"}
             justify="space-between"

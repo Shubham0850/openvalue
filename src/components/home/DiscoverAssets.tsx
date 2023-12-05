@@ -56,8 +56,8 @@ const DiscoverAssets = () => {
           width={{ base: "80%" }}
           mb={{ base: 10, md: 28 }}
         >
-          Explore a variety of tokenized assets across different sectors with
-          Open Value.
+          Open value is a marketplace for top tier tokenized assets across
+          various sectors
         </Text>
         <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
           {assetData.map(({ icon, heading }, index) => (

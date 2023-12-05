@@ -14,8 +14,8 @@
 .btn-outline {
   display: inline-block;
   padding: 8px 22px;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 150%;
   text-align: center;
   text-decoration: none;
@@ -35,9 +35,9 @@
 
 .opposite-button {
   display: inline-block;
-  padding: 15px 40px;
-  font-size: 18px;
-  font-weight: 400;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 150%;
   text-align: center;
   text-decoration: none;
@@ -86,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .opposite-button {
     font-size: 16px;
     padding: 8px 18px;
@@ -98,4 +98,4 @@
     font-size: 14px;
     padding: 6px 16px;
   }
-}
+} */
