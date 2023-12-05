@@ -1,5 +1,5 @@
 import { Container, Box, Text, Flex, Input } from "@chakra-ui/react";
-import { CiMail } from "react-icons/ci";
+import { MdMailOutline } from "react-icons/md";
 
 const Newsletter = () => {
   return (
@@ -10,10 +10,18 @@ const Newsletter = () => {
           fontSize={{ base: "28px", md: "36px" }}
           fontWeight="600"
           color="#121212"
+          width={{ base: "80%", md: "100%" }}
+          margin="auto"
         >
           Subscribe Our Newsletter
         </Text>
-        <Text fontSize={{ base: "md", md: "16px" }} color="#616161" mt={4}>
+        <Text
+          width={{ base: "80%", md: "100%" }}
+          fontSize={{ base: "md", md: "16px" }}
+          margin="auto"
+          color="#616161"
+          mt={4}
+        >
           Get the latest feed about Platform updates, tokenization, and General
           web3 and Financial markets information. 
         </Text>
@@ -31,12 +39,13 @@ const Newsletter = () => {
           p={2}
           mb={{ base: 4, md: 0 }}
         >
-          <CiMail size="20px" color="#616161" />
+          <MdMailOutline size="30px" color="#BDBDBD" />
           <Input
+            padding={2}
             variant="unstyled"
             placeholder="Email Address"
             ml={2}
-            fontSize={{ base: "sm", md: "14px" }}
+            fontSize={{ base: "14px", md: "14px" }}
           />
         </Flex>
         <button className="thin-button">Sign Up</button>
