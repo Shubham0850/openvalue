@@ -2,8 +2,8 @@ import { Box, Heading, Text, Button, Container, Flex } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
-    <Box color="#121212" py={{ base: 8, md: "11vh" }}>
-      <Container maxW="1300">
+    <Box color="#121212" py={{ base: 8, md: "11vh" }} className="relative">
+      <Container maxW="1300" >
         <Flex
           align="center"
           justify="center"
@@ -32,6 +32,28 @@ const Hero = () => {
           </Text>
           <button className="opposite-button">Invest Now</button>
         </Flex>
+
+        <Box className="absolute top-0 left-1/2 transform -translate-x-1/2">
+          <img
+            src="/gradient/HeroCenter.svg"
+            alt="hero"
+            width="100%"
+          />
+        </Box>
+        <Box className="absolute top-0 right-0">
+          <img
+            src="/gradient/HeaderRight.svg"
+            alt="hero"
+            width="100%"
+          />
+        </Box>
+        <Box className="absolute -top-[15%] left-0 w-[100%]">
+          <img
+            src="/gradient/HeaderBottom.svg"
+            alt="hero"
+            width="100%"
+          />
+        </Box>
       </Container>
     </Box>
   );

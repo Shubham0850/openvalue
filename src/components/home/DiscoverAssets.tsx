@@ -37,8 +37,8 @@ const DiscoverAssets = () => {
   ];
 
   return (
-    <Container maxW={1300} p={{ base: "5vh 0px" }}>
-      <Grid  alignItems="center" textAlign="center">
+    <Container maxW={1300} p={{ base: "5vh 50px" }} className="relative">
+      <Grid alignItems="center" textAlign="center">
         <Text
           as="h2"
           fontSize={{ base: "32px", md: "48px" }}
@@ -95,6 +95,14 @@ const DiscoverAssets = () => {
           ))}
         </Grid>
       </Grid>
+
+      <Box className="absolute -top-[80px] -right-[120px]">
+        <img
+          src="/gradient/DiscoveredRightStarts.svg"
+          alt="hero"
+          width="100%"
+        />
+      </Box>
     </Container>
   );
 };

@@ -27,6 +27,7 @@ const Newsletter = () => {
         </Text>
       </Box>
       <Flex
+      p={10}
         width={"100%"}
         justifyContent={"center"}
         alignItems={"center"}

@@ -57,15 +57,14 @@ function AssetOwner() {
           as="h2"
           fontSize={{ base: "24px", md: "36px" }}
           fontWeight="600"
-          mb={{ base: 4, md: 6 }}
           color="#121212"
-          width={{ base: "70%" }}
+          width={{ base: "65%" }}
           margin="auto"
         >
           We provide liquidation to Asset owners
         </Text>
       </Box>
-      <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"}>
+      <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"} mt={"30px"}>
         <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
           <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
           <defs>
@@ -82,6 +81,7 @@ function AssetOwner() {
         justifyContent="center"
         alignItems="start"
         gap={{ md: "20", base: "10" }}
+        p={{ base: 10, md: 0 }}
       >
         <RenderReason
           key="data1"

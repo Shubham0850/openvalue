@@ -14,7 +14,7 @@ const JoinCommunity = () => {
   };
 
   return (
-    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
+    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }} className="relative">
       <Box textAlign="center" mb={{ base: 6, md: 10 }}>
         <Text
           as="h2"
@@ -50,6 +50,14 @@ const JoinCommunity = () => {
           </Box>
         </Flex>
       </Flex>
+
+      <Box className="absolute -top-[80%] left-1/2 transform -translate-x-1/2 w-[100%]">
+        <img
+          src="/gradient/HeroCenter.svg"
+          alt="hero"
+          width="100%"
+        />
+      </Box>
     </Container>
   );
 };

@@ -63,7 +63,7 @@ function WhyUs() {
         <Grid
           maxW={800}
           mx="auto"
-          gap={10}
+          gap={{ base: 1, md: 10 }}
           templateColumns={{ base: "1fr", md: "1fr 1fr" }}
         >
           <RenderReason
@@ -91,7 +91,17 @@ function WhyUs() {
         <Box className="absolute top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-center d-none">
           <img src="/gradient/plus-line.svg" alt="plus-line" width="100%" className="-m-10" />
         </Box>
+
+        <Box className="absolute -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
+          <img
+            src="/gradient/WhyUsCenter.svg"
+            alt="hero"
+            width="120%"
+          />
+        </Box>
       </Box>
+
+
     </Container>
   );
 }

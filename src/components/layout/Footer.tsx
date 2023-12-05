@@ -12,12 +12,12 @@ const Footer = () => {
   };
 
   return (
-    <Box bg="white" color="#121212" py={{ base: 8, md: 16 }} textAlign="left">
-      <Container maxW={1300}>
+    <Box bg="white" color="#121212" py={{ base: 8, md: 16 }} textAlign="left" className="relative" overflow={"hidden"}>
+      <Container maxW={1300} p={10}>
         <Flex
           direction={{ base: "column-reverse", md: "row" }}
-          justify={{ base: "center", md: "space-between" }}
-          align={{ base: "center", md: "flex-start" }}
+          justify={{ base: "", md: "space-between" }}
+          align={{ base: "", md: "flex-start" }}
           mb={{ base: 8, md: 12 }}
         >
           <Box
@@ -38,10 +38,10 @@ const Footer = () => {
               </Text>
             </Box>
           </Box>
-          <Flex direction="column" align={{ base: "center", md: "flex-start" }}>
+          <Flex direction="column" align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
-              fontSize={{ base: "14px", md: "16px" }}
-              fontWeight={{ base: "400", md: "600" }}
+              fontSize={"16px"}
+              fontWeight={"600"}
               mb={{ base: "2", md: "4" }}
             >
               About
@@ -62,10 +62,10 @@ const Footer = () => {
               Contact Us
             </Link>
           </Flex>
-          <Flex direction="column" align={{ base: "center", md: "flex-start" }}>
+          <Flex direction="column" align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
-              fontSize={{ base: "14px", md: "16px" }}
-              fontWeight={{ base: "400", md: "600" }}
+              fontSize={"16px"}
+              fontWeight={"600"}
               mb={{ base: "2", md: "4" }}
             >
               General
@@ -77,10 +77,10 @@ const Footer = () => {
               Invest
             </Link>
           </Flex>
-          <Flex direction="column" align={{ base: "center", md: "flex-start" }}>
+          <Flex direction="column" align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
-              fontSize={{ base: "14px", md: "16px" }}
-              fontWeight={{ base: "400", md: "600" }}
+              fontSize={"16px"}
+              fontWeight={"600"}
               mb={{ base: "2", md: "4" }}
             >
               Legal
@@ -94,6 +94,14 @@ const Footer = () => {
           </Flex>
         </Flex>
       </Container>
+
+      <Box className="absolute -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
+        <img
+          src="/gradient/HeroCenter.svg"
+          alt="hero"
+          width="100%"
+        />
+      </Box>
     </Box>
   );
 };
