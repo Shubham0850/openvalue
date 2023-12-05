@@ -49,7 +49,7 @@ function RenderReason({
   );
 }
 
-function AssetOwner() {
+function Buyers() {
   return (
     <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
       <Box textAlign="center" mb={{ base: 6, md: 8 }}>
@@ -60,7 +60,7 @@ function AssetOwner() {
           mb={{ base: 10, md: 14 }}
           color="#121212"
         >
-          We provide liquidation to Asset owners
+          We offer wide range of asset class to Buyers
         </Text>
       </Box>
       <Flex
@@ -71,24 +71,24 @@ function AssetOwner() {
       >
         <RenderReason
           key="data1"
-          title="Price discovery"
-          description="All the transactions are on blockchain, Factors influencing price discovery include market sentiment, liquidity, the underlying asset's performance."
+          title="Accessibility"
+          description="Retails get access to diversified assets tokenized assets and build portfolio."
         />
 
         <RenderReason
           key="data2"
-          title="Liquidation"
-          description="Orderbook makes liquidation easier. Liquidity pool enables better liquidation of assets."
+          title="Diversification"
+          description="Asset diversification helps spread investment risk across different asset classes, reducing the overall portfolio volatility. "
         />
 
         <RenderReason
           key="data2"
-          title="Instant settlement"
-          description="Using blockchain technology not only removes multiple intermediaries but also ensures the instant confirmation of transactions."
+          title="inflation resistance Assets"
+          description="Many of assets like realestate , precious metals, bonds have stable returns compared to other assets. "
         />
       </Flex>
     </Container>
   );
 }
 
-export default AssetOwner;
+export default Buyers;

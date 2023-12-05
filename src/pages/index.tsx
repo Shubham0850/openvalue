@@ -1,4 +1,5 @@
 import AssetOwner from "@/components/home/AssetOwner";
+import Buyers from "@/components/home/Buyers";
 import DiscoverAssets from "@/components/home/DiscoverAssets";
 import EarlyAccess from "@/components/home/EarlyAccess";
 import FAQ from "@/components/home/FAQ";
@@ -31,6 +32,7 @@ export default function Home() {
       <WhyUs />
       <DiscoverAssets />
       <AssetOwner />
+      <Buyers />
       <EarlyAccess />
       <FAQ />
       <JoinCommunity />
