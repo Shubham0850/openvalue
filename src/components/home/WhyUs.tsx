@@ -50,7 +50,7 @@ function WhyUs() {
           fontSize={{ base: "12px", md: "16px", lg: "18px" }}
           fontWeight="300"
           color="#616161"
-          mb={{ base: 6, md: 10, lg: 28 }}
+          mb={{ base: 6, md: 28 }}
           margin="auto"
           width={{ base: "70%", md: "70%" }}
         >

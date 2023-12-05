@@ -1,44 +1,37 @@
 import { Container, Text, Flex, Box } from "@chakra-ui/react";
-import { FaRegCreditCard } from "react-icons/fa";
-import { BsFillCreditCard2FrontFill } from "react-icons/bs";
-import { FaHouseChimney } from "react-icons/fa6";
-
-import { AiFillGolden } from "react-icons/ai";
-import { GiAtom } from "react-icons/gi";
-import { BiSolidCollection } from "react-icons/bi";
 
 const DiscoverAssets = () => {
   const iconColor = "#ab854c";
 
   const assetData = [
     {
-      icon: <FaRegCreditCard size={25} color={iconColor} />,
+      image: "/card.png",
       heading: "Debit Securities",
     },
     {
-      icon: <BsFillCreditCard2FrontFill size={25} color={iconColor} />,
+      image: "/creditcard.png",
       heading: "Private Credit",
     },
     {
-      icon: <FaHouseChimney size={25} color={iconColor} />,
+      image: "/realstate.png",
       heading: "Real Estate",
     },
     {
-      icon: <AiFillGolden size={25} color={iconColor} />,
+      image: "/metals.png",
       heading: "Precious Metals",
     },
     {
-      icon: <GiAtom size={25} color={iconColor} />,
+      image: "/carbon.png",
       heading: "Carbon Credits",
     },
     {
-      icon: <BiSolidCollection size={25} color={iconColor} />,
+      image: "/collectible.png",
       heading: "Collectible",
     },
   ];
 
   return (
-    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
+    <Container maxW={1300} p={{ base: "5vh 0px" }}>
       <Flex direction="column" alignItems="center" textAlign="center">
         <Text
           as="h2"
@@ -54,34 +47,30 @@ const DiscoverAssets = () => {
           fontWeight="300px"
           color="#616161"
           width={{ base: "80%" }}
-          mb={{ base: 10, md: 28 }}
+          mb={{ base: 10 }}
         >
-          Open value is a marketplace for top tier tokenized assets across
+          Open value is a marketplace for top-tier tokenized assets across
           various sectors
         </Text>
         <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-          {assetData.map(({ icon, heading }, index) => (
+          {assetData.map(({ image, heading }, index) => (
             <Flex
+              flexDirection="column"
+              alignItems="center"
               key={index}
-              direction="column"
-              align="center"
-              width={{ base: "100%", md: "33%" }}
+              width={{ base: "35%", md: "28%" }}
               textAlign="center"
+              mb={{ base: 8, md: 10 }}
             >
+              <Box padding="8px" borderRadius="7px" mb={2}>
+                <img src={image} alt={heading} width="130px" />
+              </Box>
               <Text
-                background="radial-gradient(circle, hsla(156, 5%, 21%, 1) 21%, hsla(60, 11%, 5%, 1) 100%)"
-                padding="8px"
-                borderRadius="7px"
-              >
-                {icon}
-              </Text>
-
-              <Text
-                fontSize="24px"
-                fontWeight="600"
-                mt={2}
+                fontSize={{ base: "15px", md: "24px" }}
+                fontWeight={{ base: "500", md: "600" }}
                 color="#000"
-                mb={16}
+                mb={4}
+                mt={-10}
               >
                 {heading}
               </Text>
