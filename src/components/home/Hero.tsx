@@ -15,6 +15,7 @@ const Hero = () => {
             width={{ base: "90%", md: "70%" }}
             fontSize={{ base: "2xl", md: "64px" }}
             mb={{ base: 4, md: 4 }}
+            fontWeight="600"
           >
             Explore Institutional Grade Real-world Assets
           </Heading>

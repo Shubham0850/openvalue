@@ -54,7 +54,10 @@ function Nav() {
 
   return (
     <>
-      <Box bg="rgba(19, 19, 19, 0.03)">
+      <Box
+        bg="rgba(19, 19, 19, 0.03)"
+        boxShadow="0px -1px 1px 0px rgba(0, 0, 0, 0.10) inset"
+      >
         <Container maxW={1300}>
           <Flex
             as={"nav"}

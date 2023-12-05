@@ -8,7 +8,7 @@ import { GiAtom } from "react-icons/gi";
 import { BiSolidCollection } from "react-icons/bi";
 
 const DiscoverAssets = () => {
-  const iconColor = "#C26F09";
+  const iconColor = "#ab854c";
 
   const assetData = [
     {
@@ -68,7 +68,11 @@ const DiscoverAssets = () => {
               width={{ base: "100%", md: "33%" }}
               textAlign="center"
             >
-              <Text bgColor="#5A421E" padding="8px" borderRadius="7px">
+              <Text
+                background="radial-gradient(circle, hsla(156, 5%, 21%, 1) 21%, hsla(60, 11%, 5%, 1) 100%)"
+                padding="8px"
+                borderRadius="7px"
+              >
                 {icon}
               </Text>
 
