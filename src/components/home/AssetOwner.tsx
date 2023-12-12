@@ -15,7 +15,7 @@ function RenderReason({
       justify="center"
       textAlign={{ base: "start", md: "start" }}
       margin={{ base: "auto", md: "0" }}
-      width={{ base: "73%", md: "22%" }}
+      width={{ base: "98%", md: "22%" }}
       gap={{ md: "3", base: "2" }}
       mt="20px"
     >
@@ -31,8 +31,8 @@ function RenderReason({
         </svg>
         <Text
           as="h3"
-          fontSize={{ base: "20px", md: "22px" }}
-          fontWeight={{ base: "500", md: "600" }}
+          fontSize={{ base: "18px", md: "22px" }}
+          fontWeight={{ base: "400", md: "600" }}
         >
           {title}
         </Text>
@@ -40,7 +40,7 @@ function RenderReason({
 
       <Text
         color="#616161"
-        fontSize={{ base: "12px", md: "14px" }}
+        fontSize={{ base: "14px", md: "14px" }}
         fontWeight={{ base: "400", md: "400" }}
       >
         {description}
@@ -61,10 +61,10 @@ function AssetOwner() {
           width={{ base: "73%" }}
            margin={'auto'}
         >
-          We provide liquidation To Asset owners
+          We Unlock Asset Issuers Navigate New Distribution Channels 
         </Text>
       </Box>
-      <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"} mt={"30px"}>
+      <Flex justifyContent={"center"} alignItems={"center"} mb={{base:'1px',md:'60px'}} mt={"30px"}>
         <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
           <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
           <defs>
@@ -77,6 +77,7 @@ function AssetOwner() {
         </svg>
       </Flex>
       <Flex
+         
         flexDirection={{ base: "column", md: "row" }}
         justifyContent="center"
         alignItems="start"
@@ -85,20 +86,21 @@ function AssetOwner() {
       >
         <RenderReason
           key="data1"
-          title="Price discovery"
-          description="All the transactions are on blockchain, Factors influencing price discovery include market sentiment, liquidity, the underlying asset's performance."
+          title="Early Liquidation: "
+          description="We enable asset issuers to list their tokenized assets on our marketplace before maturity, providing an avenue for early liquidation and capital generation."
         />
 
         <RenderReason
           key="data2"
-          title="Liquidation"
-          description="Orderbook makes liquidation easier. Liquidity pool enables better liquidation of assets."
+          title="Price Discovery:"
+          description="Our platform facilitates the creation of new markets for illiquid assets through tokenization. This leads to improved liquidity, easier trading access, and more accurate price discovery."
         />
 
         <RenderReason
           key="data2"
-          title="Instant settlement"
-          description="Using blockchain technology not only removes multiple intermediaries but also ensures the instant confirmation of transactions."
+          title="Global Investor Access:"
+          description="Our user-friendly onboarding process and global reach provide asset issuers with a diverse investor base, optimal pricing, and compliance assurance.
+          "
         />
       </Flex>
     </Container>

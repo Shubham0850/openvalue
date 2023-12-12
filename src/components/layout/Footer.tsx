@@ -1,13 +1,15 @@
-import { Box, Container, Text, Flex, Link, Image } from "@chakra-ui/react";
+import { Box, Container, Text, Flex, Link, Image,useBreakpointValue  } from "@chakra-ui/react";
 
 const Footer = () => {
   const style = {
     link: {
       textDecoration: "none",
-
+     opacity:'0.5',
       marginBottom: "4px",
-      fontSize: "16px",
-      color: "#616161",
+      fontSize: "14px",
+      color: "#121212",
+      fontWeight: useBreakpointValue({ base: 300, md: 400 }),
+
     },
   };
 
@@ -46,10 +48,11 @@ const Footer = () => {
             </Box>
           </Box>
   
+
           <Flex direction="column" w={'50%'} align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
               fontSize={"16px"}
-              fontWeight={"600"}
+              fontWeight={{base:400,md:700}}
               mb={{ base: "2", md: "4" }}
             >
               About
@@ -71,7 +74,7 @@ const Footer = () => {
           <Flex direction="column" w={'50%'} align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
               fontSize={"16px"}
-              fontWeight={"600"}
+              fontWeight={{base:400,md:700}}
               mb={{ base: "2", md: "4" }}
             >
               General
@@ -89,7 +92,7 @@ const Footer = () => {
           <Flex direction="column" w={'50%'}  align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
               fontSize={"16px"}
-              fontWeight={"600"}
+              fontWeight={{base:400,md:700}}
               mb={{ base: "2", md: "4" }}
             >
              Socials

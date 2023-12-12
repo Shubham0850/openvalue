@@ -18,19 +18,18 @@ const Hero = () => {
             fontWeight="600"
             mt={{ base: "154px" }}
           >
-            Explore Institutional Grade Real-world Assets
+            
+Buy and Sell Institutional Grade  Real-World Assets
+
           </Heading>
           <Text
             fontSize={{ base: "14px", md: "18px" }}
             width={{ base: "74%", md: "58%" }}
             mb={{ base: "70px", md: 8 }}
           >
-            Open value is a marketplace for top-tier tokenized assets across
-            various sectors like real estate, debit securities (bonds +
-            T-bills), private credit – precious metals, carbon credits, and
-            stocks.
+            Tangido is a secondary marketplace to trade real-world assets . Users can buy, and sell tokenized Assets across a wide range of classes and sectors ranging from private credit, fixed debt instruments, real estate, precious metals, collectibles, and carbon credits
           </Text>
-          <button className="opposite-button">Invest Now</button>
+          <button className="opposite-button " >Invest Now</button>
         </Flex>
 
         <Box className="absolute -z-10 top-0 left-1/2 transform -translate-x-1/2">

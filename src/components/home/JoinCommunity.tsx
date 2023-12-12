@@ -18,9 +18,11 @@ const JoinCommunity = () => {
       <Box textAlign="center" mb={{ base: 6, md: 10 }}>
         <Text
           as="h2"
-          fontSize={{ base: "28px", md: "32px" }}
+          fontSize={{ base: "20px", md: "32px" }}
           fontWeight="500"
           color="#121212"
+          px={'46px'}
+          margin={'auto'}
           marginBottom={{ base: "50px" }}
         >
           Join our community of tokenization supporters

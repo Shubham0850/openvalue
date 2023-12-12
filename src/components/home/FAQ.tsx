@@ -65,7 +65,7 @@ const FAQ = () => {
               mb={{ base: 4, md: 6 }}
               textAlign={{ base: "center", md: "left" }}
             >
-              Frequent Asked Questions
+            Frequently Asked Questions
             </Text>
             <Text
               fontSize={{ base: "12px", md: "20px" }}
@@ -75,7 +75,7 @@ const FAQ = () => {
               width={{ base: "72%", md: "100%" }}
               margin="auto"
             >
-              {"Got questions? We've got answers. If you don't find what you're looking for, feel free to contact us."}
+              {"Got questions? If you don't find what you're looking for, feel free to contact us."}
             </Text>
           </Box>
 
@@ -83,38 +83,33 @@ const FAQ = () => {
           <Accordion>
             <AccordionItemComponent
               key="question1"
-              question="What is secondary market for real-world 
-              asset tokenization? "
-              answer="Please refer rwa prd / pitch draft to compose the msg. "
+              question="What is asset tokenization?"
+              answer="It refers to the process of representing ownership or a fraction of ownership of an asset, such as real estate, artwork, commodities, or financial instruments, as a digital token. "
             />
             <AccordionItemComponent
               key="question2"
-              question="How OpenValue is different from other platforms? "
-              answer="Please refer rwa prd / pitch draft to compose the msg. "
+              question="What is the secondary market for real-world asset tokenization? "
+              answer="The secondary market for real-world asset tokenization is a platform where investors can buy and sell tokenized real-world assets.  "
             />
             <AccordionItemComponent
               key="question3"
-              question="What kind of assets are supported 
-              for trading?"
-              answer="Please refer rwa prd / pitch draft to compose the msg. "
+              question="How is Tangido different from other platforms?"
+              answer="OpenValue stands out by providing a diverse marketplace for top-tier tokenized assets, ensuring transparency through blockchain, instant settlement, and fractional ownership. Offering a wide range of assets, and inviting issuers to connect with a larger community on our secondary market."
             />
             <AccordionItemComponent
               key="question4"
-              question="Do i need to do KYC for Investment? "
-              answer="Please refer rwa prd / pitch draft to compose the msg. "
+              question="What kind of assets are supported for trading? "
+              answer="A: Our platform supports a diverse range of assets for trading, including real estate, debt securities (bonds + t-bills), private credit, precious metals, carbon credit and stocks."
             />{" "}
             <AccordionItemComponent
               key="question5"
-              question="Is there any lockin period on any 
-              purchased token asset? "
-              answer="Please refer rwa prd / pitch draft to compose the msg. "
+              question=" Do I need to complete KYC for investment? "
+              answer="Answer: Yes, Know Your Customer (KYC) verification is required for investment on our platform. It helps ensure the security and compliance of our users."
             />{" "}
             <AccordionItemComponent
               key="question6"
-              question="Are there regulatory considerations when 
-              trading tokenized assets on a
-              secondary market? "
-              answer="Please refer rwa prd / pitch draft to compose the msg. "
+              question="Is there any lock-in period on any purchased token asset? "
+              answer="No, there is no lock-in period for purchased token assets. Users have the flexibility to sell their assets at any time by placing sell orders on the platform. "
             />
           </Accordion>
         </Flex>

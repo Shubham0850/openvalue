@@ -17,39 +17,39 @@ const DiscoverAssets = () => {
   const assetData = [
     {
       image: "/card.png",
-      heading: "Debit Securities",
+      heading: "Private Credit",
       description:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+        "Access to tokenized private debt assets such as trade receivables, SMEs, and mortgage instruments. ",
     },
     {
       image: "/creditcard.png",
-      heading: "Private Credit",
+      heading: "Real Estate",
       description:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+        "Explore the world of real estate investment without traditional barriers, with access to tokenized commercial and residential properties.",
     },
     {
       image: "/realstate.png",
-      heading: "Real Estate",
+      heading: "Precious Metals      ",
       description:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+        "Secure your portfolio against inflation, invest in tokenized gold and other precious metals without worrying about storage or security.",
     },
     {
       image: "/metals.png",
-      heading: "Precious Metals",
+      heading: "Bonds",
       description:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+        "Broaden your investment horizons with access to high-quality bonds from reputable institutions worldwide, adding a stable component to your portfolio.",
     },
     {
       image: "/carbon.png",
       heading: "Carbon Credits",
       description:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+        "Invest in the future of our planet with carbon credits, contributing to environmental sustainability while diversifying your portfolio.",
     },
     {
       image: "/collectible.png",
-      heading: "Collectible",
+      heading: "Collectibles",
       description:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
+        "Indulge in the unique market of collectibles like tokenized art, pop culture icons, and sports memorabilia.",
     },
   ];
 
@@ -65,11 +65,11 @@ const DiscoverAssets = () => {
           <Text
             as="h2"
             fontSize={{ base: "24px", md: "48px" }}
-            fontWeight="600"
+            fontWeight={{base:500,md:600}}
             mb={{ base: 4, md: 6 }}
             color="#121212"
-          >
-            Discover Assets
+          >Discover Assets Beyond  
+
           </Text>
           <Text
             fontSize={{ base: "12px", md: "18px" }}
@@ -77,8 +77,8 @@ const DiscoverAssets = () => {
             color="#616161"
             mb={{ base: 10 }}
           >
-            Open value is a marketplace for top-tier tokenized assets across
-            various sectors
+            Out-of-the-box platform democratizing access to exclusive opportunities
+
           </Text>
           <Grid
             mx="auto"

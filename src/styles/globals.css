@@ -58,7 +58,7 @@
   display: inline-block;
   padding: 13px 22px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 150%;
   text-align: center;
   text-decoration: none;
@@ -81,18 +81,19 @@
 
 @media screen and (max-width: 480px) {
   .thin-button {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 22px;
   }
 }
 
-/* @media screen and (max-width: 768px) {
+ @media screen and (max-width: 767px) {
   .opposite-button {
     font-size: 16px;
-    padding: 8px 18px;
+
   }
 }
 
+/*
 @media screen and (max-width: 480px) {
   .opposite-button {
     font-size: 14px;

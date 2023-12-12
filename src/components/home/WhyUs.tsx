@@ -36,7 +36,7 @@ function RenderReason({
 
 function WhyUs() {
   return (
-    <Container maxW={1300} py={{ base: "9vh", md: "15vh", lg: "25vh" }} id="whyus">
+    <Container maxW={1300} py={{ base: "1vh", md: "15vh", lg: "25vh" }} id="whyus">
       <Box textAlign="center" mb={{ base: 6, md: 8 }}>
         <Text
           as="h2"
@@ -45,7 +45,7 @@ function WhyUs() {
           mb={{ base: 4, md: 6 }}
           color="#121212"
         >
-          Why Us?
+          The Tangido Edge
         </Text>
         <Text
           fontSize={{ base: "12px", md: "16px", lg: "18px" }}
@@ -55,8 +55,7 @@ function WhyUs() {
           margin="auto"
           width={{ base: "70%", md: "70%" }}
         >
-          Open value is a marketplace for top-tier tokenized assets across
-          various sectors.
+         We are offering key features to trade tokenized assets efficiently 
         </Text>
       </Box>
 
@@ -69,23 +68,33 @@ function WhyUs() {
         >
           <RenderReason
             key="data1"
-            title="Access to Broad Assets"
-            description="Retail investors can gain access to alternative investments having sustainable returns backed by real assets"
+            title="
+
+            Secondary Marketplace
+            "
+            description="Users can seamlessly trade tokenized assets without constraints of multiple platforms and  geographical boundaries 
+            "
           />
           <RenderReason
             key="data2"
-            title="Fractionalization"
-            description="Investors can own a fractional asset and be an owner in assets that typically are inaccessible without fractionalization. // reword "
+            title="Fractional Ownership
+            "
+            description=" Users can own a piece of typically inaccessible assets.Our platform enables fractional ownership, allowing you to hold a stake in high-value assets."
           />
           <RenderReason
             key="data3"
-            title="Transparency"
-            description="All the transactions are recorded on the blockchain, making it fully transparent and immutable of ownership."
+            title="
+
+            Market flexibility 
+            "
+            description="Users can buy or sell the tokenized assets without bounds with almost real time settlement and 24/7 open markets. "
           />
           <RenderReason
             key="data4"
-            title="Instant Settlement"
-            description="Harness the power of DLT technologies to get instant settlements along with high liquidity and lower fees."
+            title="
+            Transparency 
+            "
+            description="Transparency is built into the platform designed as all the transactions are recorded on the blockchain database. Thereby providing immutable, censorship-resistant records of transactions."
           />
         </Grid>
 
@@ -101,7 +110,18 @@ function WhyUs() {
           />
         </Box>
       </Box>
-
+      <Flex display={{ base: 'flex', md: 'none' }} justifyContent={"center"}  alignItems={"center"}  >
+        <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
+          <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
+          <defs>
+            <radialGradient id="paint0_radial_475_2385" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(776 1.43883) rotate(179.999) scale(775 937024)">
+              <stop stop-color="white" />
+              <stop offset="0.463542" stop-color="#74C69D" />
+              <stop offset="1" stop-color="white" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </Flex>
 
     </Container>
   );

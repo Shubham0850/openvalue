@@ -15,7 +15,7 @@ function RenderReason({
       justify="center"
       textAlign={{ base: "start", md: "start" }}
       margin={{ base: "auto", md: "0" }}
-      width={{ base: "73%", md: "23%" }}
+      width={{ base: "98%", md: "23%" }}
       gap={{ md: "3", base: "2" }}
       mt="20px"
    
@@ -32,8 +32,8 @@ function RenderReason({
         </svg>
         <Text
           as="h3"
-          fontSize={{ base: "20px", md: "22px" }}
-          fontWeight={{ base: "500", md: "600" }}
+          fontSize={{ base: "18px", md: "22px" }}
+          fontWeight={{ base: "400", md: "600" }}
         >
           {title}
         </Text>
@@ -41,7 +41,7 @@ function RenderReason({
 
       <Text
         color="#616161"
-        fontSize={{ base: "12px", md: "14px" }}
+        fontSize={{ base: "14px", md: "14px" }}
         fontWeight={{ base: "400", md: "400" }}
       >
         {description}
@@ -57,15 +57,15 @@ function Buyers() {
         <Text
           as="h2"
           fontSize={{ base: "24px", md: "36px" }}
-          fontWeight="600"
+          fontWeight={{base:500,md:600}}
           color="#121212"
           width={{ base: "65%" }}
           margin="auto"
         >
-          We Offer wide Range Of Assets Class To Buyers
+          Wide Range of Diverse and Inflation-Resistant Assets
         </Text>
       </Box>
-      <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"} mt={"30px"}>
+      <Flex justifyContent={"center"} alignItems={"center"} mb={{base:'2px',md:'60px'}} mt={"30px"}>
         <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
           <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
           <defs>
@@ -87,19 +87,19 @@ function Buyers() {
         <RenderReason
           key="data1"
           title="Accessibility"
-          description="Retails get access to diversified assets tokenized assets and build portfolio."
+          description="Our platform is built to bridge the long-existing accessibility gap, making previously inaccessible assets available to a wider range of investors."
         />
 
         <RenderReason
           key="data2"
-          title="Diversification"
-          description="Asset diversification helps spread investment risk across different asset classes, reducing the overall portfolio volatility."
+          title="Diversified Investments"
+          description="Choose to invest in opportunities across multiple asset classes, reducing risk and ensuring a balanced portfolio for a more secure financial future."
         />
 
         <RenderReason
           key="data2"
-          title="inflation resistance Assets"
-          description="Many of assets like realestate , precious metals, bonds have stable returns compared to other assets. "
+          title="Inflation-resistant  Asset Class"
+          description="Our marketplace features assets that are designed to resist inflation, providing a robust investment portfolio that can weather various economic conditions."
         />
       </Flex>
     </Container>

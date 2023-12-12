@@ -5,7 +5,7 @@ const EarlyAccess = () => {
   return (
     <Box
       p={{ base: "5vh 0px" }}
-      m={{ base: "8vh 0px", md: "20vh 0" }}
+      m={{ base: "4vh 0px", md: "20vh 0" }}
       bgGradient="linear-gradient(31deg, hsla(151, 40%, 70%, 1) 30%, hsla(46, 65%, 69%, 1) 100%)"
       color="white"
       py={{ base: 8, md: 16 }}
@@ -24,9 +24,9 @@ const EarlyAccess = () => {
           mb={{ base: 10, md: 8 }}
           color="black"
         >
-          A Platform To Buy And Sell Modernized Financial Assets
+       A Platform To Buy And Sell modernized Financial Assets 
         </Text>
-        <button className="thin-button">Get early access</button>
+        <button className="thin-button">Get Early Access</button>
       </Container>
     </Box>
   );
