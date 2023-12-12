@@ -1,7 +1,52 @@
 import { Container, Box, Text, Flex, Input } from "@chakra-ui/react";
 import { MdMailOutline } from "react-icons/md";
+import { useState } from "react";
+import axios from "axios";
+
 
 const Newsletter = () => {
+
+  const [email, setEmail] = useState(""); 
+  const [message, setMessage] = useState(""); 
+  const [loading, setLoading] = useState(false)
+
+  const handleSubscribe = () => {
+    setLoading(true)
+    // Step 3: Handle form submission
+    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (email === "" || !regex.test(String(email).toLowerCase())) {
+      setMessage("Please enter a valid email");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("api_key", "AghazFUFk4uDrDUsquEg");
+    formData.append("email", email);
+    formData.append("list", "ThA5aF2Lf06cHT892osZxndQ");
+
+    axios
+      .post("https://sendy.asvalabs.com/subscribe", formData, {
+        headers: { "Content-type": "application/x-www-form-urlencoded" },
+      })
+      .then((response) => {
+        const resData = response.data;
+        if (resData.includes(`You're already subscribed!`)) {
+          setMessage(`You're already subscribed!`);
+        }
+        if (resData.includes(`You're subscribed!`)) {
+          setMessage(`You're subscribed!`);
+        }
+        setEmail("")
+        setLoading(false)
+      })
+      .catch((error) => {
+        setLoading(false)
+        setMessage("Something went wrong!");
+      });
+  };
+
+
   return (
     <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
       <Box textAlign="center" mb={{ base: 6, md: 10 }}>
@@ -49,11 +94,15 @@ const Newsletter = () => {
             variant="unstyled"
             placeholder="Email Address"
             ml={2}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             fontSize={{ base: "14px", md: "14px" }}
           />
         </Flex>
-        <button className="thin-button">Sign Up</button>
+        <button   onClick={handleSubscribe} className="thin-button">                {loading ? "Submitting..." : "Sign Up"}
+</button>
       </Flex>
+      <Text color="#1F1F1F"  textAlign={"center"} >{message}</Text>
     </Container>
   );
 };

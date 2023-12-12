@@ -74,7 +74,7 @@ function Nav() {
               <Image
                 src="logo.svg"
                 alt="logo"
-                height={{ base: "20px", md: "34px" }}
+                height={{ base: "27px", md: "34px" }}
               />
             </Link>
 
@@ -87,16 +87,16 @@ function Nav() {
             <Flex
               align="center"
               display={{ base: "none", md: "flex" }}
-              gap={{ base: "20px", md: "30px" }}
+              gap={{ base: "20px", lg: "94px", md: "50px" }}
             >
               {/* Your navigation links */}
-              <Link href="/" sx={styles.deskLink}>
-                Issuers
+              <Link href="#whyus" sx={styles.deskLink}>
+                Features
               </Link>
-              <Link href="#expertise" sx={styles.deskLink}>
-                About
+              <Link href="#discoverAssets" sx={styles.deskLink}>
+                MarketPlace
               </Link>
-              <Link href="#aboutme" sx={styles.deskLink}>
+              <Link href="#faq" sx={styles.deskLink}>
                 FAQs
               </Link>
             </Flex>
@@ -122,29 +122,32 @@ function Nav() {
                   {/* Your navigation links */}
                   <Flex flexDirection="column">
                     <Link
-                      href="#expertise"
+                      href="#whyus"
                       sx={styles.mobLink}
                       onClick={handleLinkClick}
                     >
-                      Issuers
+                      Features
                     </Link>
                     <hr style={styles.mobRow} />
                     <Link
-                      href="#aboutme"
+                      href="#discoverAssets"
                       sx={styles.mobLink}
                       onClick={handleLinkClick}
                     >
-                      About
+                      MarketPlace
                     </Link>
                     <hr style={styles.mobRow} />
                     <Link
-                      href="#blogs"
+                      href="#faq"
                       sx={styles.mobLink}
                       onClick={handleLinkClick}
                     >
                       FAQs
                     </Link>
                     <hr style={styles.mobRow} />
+                    <Link href="#" sx={styles.mobLink}>
+                      <button className="btn-outline">Join Waitlist</button>
+                    </Link>
                   </Flex>
                 </DrawerBody>
               </DrawerContent>
@@ -152,8 +155,8 @@ function Nav() {
 
             {/* Contact Button */}
             <Box display={{ base: "none", md: "block" }}>
-              <Link href="#contactme">
-                <button className="btn-outline">Join</button>
+              <Link href="#">
+                <button className="btn-outline">Join Waitlist</button>
               </Link>
             </Box>
           </Flex>

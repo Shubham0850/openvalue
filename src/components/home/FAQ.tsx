@@ -46,7 +46,7 @@ function AccordionItemComponent({
 
 const FAQ = () => {
   return (
-    <Box py={{ base: 8, md: 16 }} className="relative">
+    <Box py={{ base: 8, md: 16 }} className="relative" id="faq">
       <Container maxW={1200} p={{ base: "5vh 0px", md: "10vh 0px" }}>
         <Flex
           direction={{ base: "column", md: "row" }}
@@ -120,21 +120,21 @@ const FAQ = () => {
         </Flex>
       </Container>
 
-      <Box className="absolute top-0 -left-0">
+      <Box className="absolute -z-10 top-0 -left-0">
         <img
           src="/gradient/FaqStar.svg"
           alt="hero"
           width="100%"
         />
       </Box>
-      <Box className="absolute -top-[20%] right-0">
+      <Box className="absolute -z-10 -top-[20%] right-0">
         <img
           src="/gradient/HeaderRight.svg"
           alt="hero"
           width="100%"
         />
       </Box>
-      <Box className="absolute top-0 left-0">
+      <Box className="absolute -z-10 top-0 left-0">
         <img
           src="/gradient/Left.svg"
           alt="hero"

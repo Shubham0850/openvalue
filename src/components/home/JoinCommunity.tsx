@@ -51,7 +51,7 @@ const JoinCommunity = () => {
         </Flex>
       </Flex>
 
-      <Box className="absolute -top-[80%] left-1/2 transform -translate-x-1/2 w-[100%]">
+      <Box className="absolute -z-10 -top-[80%] left-1/2 transform -translate-x-1/2 w-[100%]">
         <img
           src="/gradient/HeroCenter.svg"
           alt="hero"

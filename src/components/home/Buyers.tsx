@@ -18,6 +18,7 @@ function RenderReason({
       width={{ base: "73%", md: "23%" }}
       gap={{ md: "3", base: "2" }}
       mt="20px"
+   
     >
       <Flex gap={4} align="center" marginLeft="-35px">
         <svg
@@ -51,7 +52,7 @@ function RenderReason({
 
 function Buyers() {
   return (
-    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
+    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }} id="buyers">
       <Box textAlign="center">
         <Text
           as="h2"
@@ -61,7 +62,7 @@ function Buyers() {
           width={{ base: "65%" }}
           margin="auto"
         >
-          We offer wide range of asset class to Buyers
+          We Offer wide Range Of Assets Class To Buyers
         </Text>
       </Box>
       <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"} mt={"30px"}>

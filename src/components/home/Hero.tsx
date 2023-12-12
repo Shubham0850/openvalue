@@ -33,21 +33,21 @@ const Hero = () => {
           <button className="opposite-button">Invest Now</button>
         </Flex>
 
-        <Box className="absolute top-0 left-1/2 transform -translate-x-1/2">
+        <Box className="absolute -z-10 top-0 left-1/2 transform -translate-x-1/2">
           <img
             src="/gradient/HeroCenter.svg"
             alt="hero"
             width="100%"
           />
         </Box>
-        <Box className="absolute top-0 right-0">
+        <Box className="absolute -z-10 top-0 right-0">
           <img
             src="/gradient/HeaderRight.svg"
             alt="hero"
             width="100%"
           />
         </Box>
-        <Box className="absolute -top-[15%] left-0 w-[100%]">
+        <Box className="absolute -z-10 -top-[15%] left-0 w-[100%]">
           <img
             src="/gradient/HeaderBottom.svg"
             alt="hero"

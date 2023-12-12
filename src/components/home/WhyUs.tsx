@@ -17,6 +17,7 @@ function RenderReason({
       width="100%"
       gap={{ md: "3" }}
       padding={8}
+      
     >
       <Text
         as="h3"
@@ -35,7 +36,7 @@ function RenderReason({
 
 function WhyUs() {
   return (
-    <Container maxW={1300} py={{ base: "9vh", md: "15vh", lg: "25vh" }}>
+    <Container maxW={1300} py={{ base: "9vh", md: "15vh", lg: "25vh" }} id="whyus">
       <Box textAlign="center" mb={{ base: 6, md: 8 }}>
         <Text
           as="h2"
@@ -88,11 +89,11 @@ function WhyUs() {
           />
         </Grid>
 
-        <Box className="absolute top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-center d-none">
+        <Box className="absolute -z-10 top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-center d-none">
           <img src="/gradient/plus-line.svg" alt="plus-line" width="100%" className="-m-10" />
         </Box>
 
-        <Box className="absolute -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
+        <Box className="absolute -z-10 -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
           <img
             src="/gradient/WhyUsCenter.svg"
             alt="hero"

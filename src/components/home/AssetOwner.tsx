@@ -51,17 +51,17 @@ function RenderReason({
 
 function AssetOwner() {
   return (
-    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }}>
+    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }} id="asset">
       <Box textAlign="center" >
         <Text
           as="h2"
           fontSize={{ base: "24px", md: "36px" }}
           fontWeight="600"
           color="#121212"
-          width={{ base: "65%" }}
-          margin="auto"
+          width={{ base: "73%" }}
+           margin={'auto'}
         >
-          We provide liquidation to Asset owners
+          We provide liquidation To Asset owners
         </Text>
       </Box>
       <Flex justifyContent={"center"} alignItems={"center"} mb={"60px"} mt={"30px"}>

@@ -11,6 +11,13 @@ const Footer = () => {
     },
   };
 
+  const emailAddress = 'contact@asvalabs.com'; 
+
+  const handleClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
+
   return (
     <Box bg="white" color="#121212" py={{ base: 8, md: 16 }} textAlign="left" className="relative" overflow={"hidden"}>
       <Container maxW={1300} p={10}>
@@ -38,7 +45,8 @@ const Footer = () => {
               </Text>
             </Box>
           </Box>
-          <Flex direction="column" align={"flex-start"} mb={{ base: 5, md: 0 }}>
+  
+          <Flex direction="column" w={'50%'} align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
               fontSize={"16px"}
               fontWeight={"600"}
@@ -46,23 +54,21 @@ const Footer = () => {
             >
               About
             </Text>
-            <Link href="#" style={style.link}>
-              Team
+          
+           
+            <Link href="https://asvalabs.com/
+" style={style.link}>
+              AsvaLabs
             </Link>
-            <Link href="#" style={style.link}>
-              Partners & Backers
-            </Link>
-            <Link href="#" style={style.link}>
-              Mediakit
-            </Link>
-            <Link href="#" style={style.link}>
+            <Link href="https://asvalabs.notion.site/asvalabs/Asva-Labs-Careers-62d6bbac59854e3d8ad3bd97c2fceabc 
+" style={style.link}>
               We are Hiring!
             </Link>
-            <Link href="#" style={style.link}>
+            <Link  onClick={handleClick} style={style.link}>
               Contact Us
             </Link>
           </Flex>
-          <Flex direction="column" align={"flex-start"} mb={{ base: 5, md: 0 }}>
+          <Flex direction="column" w={'50%'} align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
               fontSize={"16px"}
               fontWeight={"600"}
@@ -70,32 +76,45 @@ const Footer = () => {
             >
               General
             </Text>
-            <Link href="#" style={style.link}>
-              Issuers
+            <Link href="#buyers" style={style.link}>
+              Buyers
+            </Link>
+            <Link href="#asset" style={style.link}>
+              Asset Owners
             </Link>
             <Link href="#" style={style.link}>
-              Invest
+              Join Waitlist
             </Link>
           </Flex>
-          <Flex direction="column" align={"flex-start"} mb={{ base: 5, md: 0 }}>
+          <Flex direction="column" w={'50%'}  align={"flex-start"} mb={{ base: 5, md: 0 }}>
             <Text
               fontSize={"16px"}
               fontWeight={"600"}
               mb={{ base: "2", md: "4" }}
             >
-              Legal
+             Socials
             </Text>
             <Link href="#" style={style.link}>
-              TnC
+              Twitter
             </Link>
             <Link href="#" style={style.link}>
-              Privacy Policy
+              Telegram
+            </Link>
+            <Link href="#" style={style.link}>
+              Linkedin
+            </Link>
+            <Link href="#" style={style.link}>
+              Discord
+            </Link>
+            <Link href="#" style={style.link}>
+              Medium
             </Link>
           </Flex>
+
         </Flex>
       </Container>
 
-      <Box className="absolute -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
+      <Box className="absolute -z-10 -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
         <img
           src="/gradient/HeroCenter.svg"
           alt="hero"
