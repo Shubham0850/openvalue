@@ -37,7 +37,8 @@ function WhyUs() {
   return (
     <Container
       maxW={1300}
-      py={{ base: "1vh", md: "15vh", lg: "25vh" }}
+      pt={{ base: "10vh", md: "15vh", lg: "25vh" }}
+      pb={{ base: "1vh", md: "15vh", lg: "25vh" }}
       id="whyus"
     >
       <Box textAlign="center" mb={{ base: 6, md: 8 }}>
