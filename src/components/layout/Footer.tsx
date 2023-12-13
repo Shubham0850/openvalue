@@ -1,4 +1,4 @@
-import { Box, Container, Text, Flex, Link, Image,useBreakpointValue  } from "@chakra-ui/react";
+import { Box, Container, Text, Flex, Link, Image,useBreakpointValue, LinkBox  } from "@chakra-ui/react";
 
 const Footer = () => {
   const style = {
@@ -38,12 +38,13 @@ const Footer = () => {
               <Text fontSize={{ base: "24px", md: "36px" }}>Openvalue</Text>
               <Text fontSize={{ base: "14px", md: "14px" }}>
                 Developed by{" "}
-                <Image
+                <Link href="https://asvalabs.com/"> <Image
                   src="asvalogo.svg"
                   alt="ASVALABS Logo"
                   margin="auto"
                   marginTop="10px"
-                />
+                /></Link>
+               
               </Text>
             </Box>
           </Box>

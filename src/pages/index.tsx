@@ -13,10 +13,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>OpenValue</title>
+        <title>Tangido : Real World Asset Marketplace</title>
         <meta
           name="description"
-          content="Explore Institutional Grade Real world assets "
+          content="Tangido is a secondary marketplace to trade real-world assets ranging from private credit, fixed debt instruments, real estate, precious metals, collectibles, and carbon credits
+          "
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
