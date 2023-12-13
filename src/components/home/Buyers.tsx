@@ -18,7 +18,6 @@ function RenderReason({
       width={{ base: "98%", md: "23%" }}
       gap={{ md: "3", base: "2" }}
       mt="20px"
-   
     >
       <Flex gap={4} align="center" marginLeft="-35px">
         <svg
@@ -57,7 +56,7 @@ function Buyers() {
         <Text
           as="h2"
           fontSize={{ base: "24px", md: "36px" }}
-          fontWeight={{base:500,md:600}}
+          fontWeight={{ base: 500, md: 600 }}
           color="#121212"
           width={{ base: "65%" }}
           margin="auto"
@@ -65,11 +64,35 @@ function Buyers() {
           Wide Range of Diverse and Inflation-Resistant Assets
         </Text>
       </Box>
-      <Flex justifyContent={"center"} alignItems={"center"} mb={{base:'2px',md:'60px'}} mt={"30px"}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
-          <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
+      <Flex
+        justifyContent={"center"}
+        alignItems={"center"}
+        mb={{ base: "2px", md: "60px" }}
+        mt={"30px"}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="777"
+          height="2"
+          viewBox="0 0 777 2"
+          fill="none"
+        >
+          <path
+            opacity="0.5"
+            d="M1 1L776 1"
+            stroke="url(#paint0_radial_475_2385)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
           <defs>
-            <radialGradient id="paint0_radial_475_2385" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(776 1.43883) rotate(179.999) scale(775 937024)">
+            <radialGradient
+              id="paint0_radial_475_2385"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(776 1.43883) rotate(179.999) scale(775 937024)"
+            >
               <stop stop-color="white" />
               <stop offset="0.463542" stop-color="#74C69D" />
               <stop offset="1" stop-color="white" />
@@ -82,7 +105,7 @@ function Buyers() {
         justifyContent="center"
         alignItems="start"
         gap={{ md: "20", base: "10" }}
-        p={{base: 10, md: 0}}
+        p={{ base: 10, md: 0 }}
       >
         <RenderReason
           key="data1"

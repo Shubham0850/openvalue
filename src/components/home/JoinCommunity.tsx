@@ -14,15 +14,19 @@ const JoinCommunity = () => {
   };
 
   return (
-    <Container maxW={1300} p={{ base: "5vh 0px", md: "15vh 0px" }} className="relative">
+    <Container
+      maxW={1300}
+      p={{ base: "5vh 0px", md: "15vh 0px" }}
+      className="relative"
+    >
       <Box textAlign="center" mb={{ base: 6, md: 10 }}>
         <Text
           as="h2"
           fontSize={{ base: "20px", md: "32px" }}
           fontWeight="500"
           color="#121212"
-          px={'46px'}
-          margin={'auto'}
+          px={"46px"}
+          margin={"auto"}
           marginBottom={{ base: "50px" }}
         >
           Join our community of tokenization supporters
@@ -54,11 +58,7 @@ const JoinCommunity = () => {
       </Flex>
 
       <Box className="absolute -z-10 -top-[80%] left-1/2 transform -translate-x-1/2 w-[100%]">
-        <img
-          src="/gradient/HeroCenter.svg"
-          alt="hero"
-          width="100%"
-        />
+        <img src="/gradient/HeroCenter.svg" alt="hero" width="100%" />
       </Box>
     </Container>
   );

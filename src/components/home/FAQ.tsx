@@ -65,7 +65,7 @@ const FAQ = () => {
               mb={{ base: 4, md: 6 }}
               textAlign={{ base: "center", md: "left" }}
             >
-            Frequently Asked Questions
+              Frequently Asked Questions
             </Text>
             <Text
               fontSize={{ base: "12px", md: "20px" }}
@@ -75,7 +75,9 @@ const FAQ = () => {
               width={{ base: "72%", md: "100%" }}
               margin="auto"
             >
-              {"Got questions? If you don't find what you're looking for, feel free to contact us."}
+              {
+                "Got questions? If you don't find what you're looking for, feel free to contact us."
+              }
             </Text>
           </Box>
 
@@ -116,25 +118,13 @@ const FAQ = () => {
       </Container>
 
       <Box className="absolute -z-10 top-0 -left-0">
-        <img
-          src="/gradient/FaqStar.svg"
-          alt="hero"
-          width="100%"
-        />
+        <img src="/gradient/FaqStar.svg" alt="hero" width="100%" />
       </Box>
       <Box className="absolute -z-10 -top-[20%] right-0">
-        <img
-          src="/gradient/HeaderRight.svg"
-          alt="hero"
-          width="100%"
-        />
+        <img src="/gradient/HeaderRight.svg" alt="hero" width="100%" />
       </Box>
       <Box className="absolute -z-10 top-0 left-0">
-        <img
-          src="/gradient/Left.svg"
-          alt="hero"
-          width="100%"
-        />
+        <img src="/gradient/Left.svg" alt="hero" width="100%" />
       </Box>
     </Box>
   );

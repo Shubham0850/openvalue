@@ -65,11 +65,11 @@ const DiscoverAssets = () => {
           <Text
             as="h2"
             fontSize={{ base: "24px", md: "48px" }}
-            fontWeight={{base:500,md:600}}
+            fontWeight={{ base: 500, md: 600 }}
             mb={{ base: 4, md: 6 }}
             color="#121212"
-          >Discover Assets Beyond  
-
+          >
+            Discover Assets Beyond
           </Text>
           <Text
             fontSize={{ base: "12px", md: "18px" }}
@@ -77,8 +77,8 @@ const DiscoverAssets = () => {
             color="#616161"
             mb={{ base: 10 }}
           >
-            Out-of-the-box platform democratizing access to exclusive opportunities
-
+            Out-of-the-box platform democratizing access to exclusive
+            opportunities
           </Text>
           <Grid
             mx="auto"

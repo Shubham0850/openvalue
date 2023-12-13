@@ -24,7 +24,7 @@ const EarlyAccess = () => {
           mb={{ base: 10, md: 8 }}
           color="black"
         >
-       A Platform To Buy And Sell modernized Financial Assets 
+          A Platform To Buy And Sell modernized Financial Assets
         </Text>
         <button className="thin-button">Get Early Access</button>
       </Container>

@@ -3,7 +3,7 @@ import { Box, Heading, Text, Button, Container, Flex } from "@chakra-ui/react";
 const Hero = () => {
   return (
     <Box color="#121212" py={{ base: 8, md: "11vh" }} className="relative">
-      <Container maxW="1300" >
+      <Container maxW="1300">
         <Flex
           align="center"
           justify="center"
@@ -18,40 +18,30 @@ const Hero = () => {
             fontWeight="600"
             mt={{ base: "154px" }}
           >
-            
-Buy and Sell Institutional Grade  Real-World Assets
-
+            Buy and Sell Institutional Grade Real-World Assets
           </Heading>
           <Text
             fontSize={{ base: "14px", md: "18px" }}
             width={{ base: "74%", md: "58%" }}
             mb={{ base: "70px", md: 8 }}
           >
-            Tangido is a secondary marketplace to trade real-world assets . Users can buy, and sell tokenized Assets across a wide range of classes and sectors ranging from private credit, fixed debt instruments, real estate, precious metals, collectibles, and carbon credits
+            Tangido is a secondary marketplace to trade real-world assets .
+            Users can buy, and sell tokenized Assets across a wide range of
+            classes and sectors ranging from private credit, fixed debt
+            instruments, real estate, precious metals, collectibles, and carbon
+            credits
           </Text>
-          <button className="opposite-button " >Invest Now</button>
+          <button className="opposite-button ">Invest Now</button>
         </Flex>
 
         <Box className="absolute -z-10 top-0 left-1/2 transform -translate-x-1/2">
-          <img
-            src="/gradient/HeroCenter.svg"
-            alt="hero"
-            width="100%"
-          />
+          <img src="/gradient/HeroCenter.svg" alt="hero" width="100%" />
         </Box>
         <Box className="absolute -z-10 top-0 right-0">
-          <img
-            src="/gradient/HeaderRight.svg"
-            alt="hero"
-            width="100%"
-          />
+          <img src="/gradient/HeaderRight.svg" alt="hero" width="100%" />
         </Box>
         <Box className="absolute -z-10 -top-[15%] left-0 w-[100%]">
-          <img
-            src="/gradient/HeaderBottom.svg"
-            alt="hero"
-            width="100%"
-          />
+          <img src="/gradient/HeaderBottom.svg" alt="hero" width="100%" />
         </Box>
       </Container>
     </Box>

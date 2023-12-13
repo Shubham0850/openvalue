@@ -105,7 +105,6 @@ const Newsletter = () => {
       <Text color="#1F1F1F" textAlign={"center"}>
         {message}
       </Text>
-    
     </Container>
   );
 };

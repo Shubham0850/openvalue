@@ -17,7 +17,6 @@ function RenderReason({
       width="100%"
       gap={{ md: "3" }}
       padding={8}
-      
     >
       <Text
         as="h3"
@@ -36,7 +35,11 @@ function RenderReason({
 
 function WhyUs() {
   return (
-    <Container maxW={1300} py={{ base: "1vh", md: "15vh", lg: "25vh" }} id="whyus">
+    <Container
+      maxW={1300}
+      py={{ base: "1vh", md: "15vh", lg: "25vh" }}
+      id="whyus"
+    >
       <Box textAlign="center" mb={{ base: 6, md: 8 }}>
         <Text
           as="h2"
@@ -55,7 +58,7 @@ function WhyUs() {
           margin="auto"
           width={{ base: "70%", md: "70%" }}
         >
-         We are offering key features to trade tokenized assets efficiently 
+          We are offering key features to trade tokenized assets efficiently
         </Text>
       </Box>
 
@@ -99,22 +102,46 @@ function WhyUs() {
         </Grid>
 
         <Box className="absolute -z-10 top-0 left-1/2 transform -translate-x-1/2 flex items-center justify-center d-none">
-          <img src="/gradient/plus-line.svg" alt="plus-line" width="100%" className="-m-10" />
+          <img
+            src="/gradient/plus-line.svg"
+            alt="plus-line"
+            width="100%"
+            className="-m-10"
+          />
         </Box>
 
         <Box className="absolute -z-10 -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
-          <img
-            src="/gradient/WhyUsCenter.svg"
-            alt="hero"
-            width="120%"
-          />
+          <img src="/gradient/WhyUsCenter.svg" alt="hero" width="120%" />
         </Box>
       </Box>
-      <Flex display={{ base: 'flex', md: 'none' }} justifyContent={"center"}  alignItems={"center"}  >
-        <svg xmlns="http://www.w3.org/2000/svg" width="777" height="2" viewBox="0 0 777 2" fill="none">
-          <path opacity="0.5" d="M1 1L776 1" stroke="url(#paint0_radial_475_2385)" stroke-width="1.5" stroke-linecap="round" />
+      <Flex
+        display={{ base: "flex", md: "none" }}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="777"
+          height="2"
+          viewBox="0 0 777 2"
+          fill="none"
+        >
+          <path
+            opacity="0.5"
+            d="M1 1L776 1"
+            stroke="url(#paint0_radial_475_2385)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
           <defs>
-            <radialGradient id="paint0_radial_475_2385" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(776 1.43883) rotate(179.999) scale(775 937024)">
+            <radialGradient
+              id="paint0_radial_475_2385"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(776 1.43883) rotate(179.999) scale(775 937024)"
+            >
               <stop stop-color="white" />
               <stop offset="0.463542" stop-color="#74C69D" />
               <stop offset="1" stop-color="white" />
@@ -122,7 +149,6 @@ function WhyUs() {
           </defs>
         </svg>
       </Flex>
-
     </Container>
   );
 }
