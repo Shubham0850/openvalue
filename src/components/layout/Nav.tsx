@@ -65,21 +65,21 @@ function Nav() {
             as={"nav"}
             justify="space-between"
             alignItems="center"
-            py={4}
+            py={{base:'30px',md:'22px'}}
             wrap="wrap"
             color="#121212"
           >
             {/* Logo */}
-            <Link href="/">
+            <Link href="/" >
               <Image
                 src="logo.svg"
                 alt="logo"
-                height={{ base: "27px", md: "34px" }}
+                height={{ base: "20px", md: "24px" }}
               />
             </Link>
 
             {/* Hamburger icon for mobile */}
-            <Box display={{ base: "block", md: "none" }} onClick={onOpen}>
+            <Box display={{ base: "block", md: "none" }}  onClick={onOpen}>
               <RxHamburgerMenu size={24} color="#121212" />
             </Box>
 
@@ -115,7 +115,7 @@ function Nav() {
                     justifyContent="center"
                     marginTop="1rem"
                   >
-                    <Image src="logo.svg" alt="logo" height="40px" />
+                    <Image src="logo.svg" alt="logo" height="24px" />
                   </Link>
                 </DrawerHeader>
                 <DrawerBody>

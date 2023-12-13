@@ -37,9 +37,9 @@ const JoinCommunity = () => {
         alignItems="center"
         flexDirection={{ base: "column", md: "row" }}
         flexWrap="wrap"
-        gap={{ base: 4, md: 8 }}
+        gap={{ base: 4, md: 20 }}
       >
-        <Flex gap={{ base: 14, md: 8 }} mb={{ base: "24px", md: "0px" }}>
+        <Flex gap={{ base: 14, md: 20 }} mb={{ base: "24px", md: "0px" }}>
           <Box style={styles.background}>
             <FaXTwitter style={{ fontSize: "46px", width: "46px" }} />
           </Box>
@@ -47,7 +47,7 @@ const JoinCommunity = () => {
             <FaDiscord style={{ fontSize: "46px", width: "46px" }} />
           </Box>
         </Flex>
-        <Flex gap={{ base: 14, md: 8 }}>
+        <Flex gap={{ base: 14, md: 20 }}>
           <Box style={styles.background}>
             <FaTelegramPlane style={{ fontSize: "46px", width: "46px" }} />
           </Box>

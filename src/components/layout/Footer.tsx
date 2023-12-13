@@ -15,7 +15,7 @@ const Footer = () => {
       textDecoration: "none",
       opacity: "0.5",
       marginBottom: "4px",
-      fontSize: "14px",
+      fontSize: useBreakpointValue({base:'14px',md:'16px'}),
       color: "#121212",
       fontWeight: useBreakpointValue({ base: 300, md: 400 }),
     },
@@ -41,27 +41,22 @@ const Footer = () => {
           direction={{ base: "column-reverse", md: "row" }}
           justify={{ base: "", md: "space-between" }}
           align={{ base: "", md: "flex-start" }}
-          mb={{ base: 8, md: 12 }}
+          mb={{ base: 3, md: 12 }}
         >
           <Box
             mt={{ base: 8, md: 0 }}
             flex={{ base: "0 0 100%", md: "0 0 40%" }}
             mb={{ base: 8, md: 0 }}
           >
-            <Box textAlign="center">
-              <Text fontSize={{ base: "24px", md: "36px" }}>Openvalue</Text>
-              <Text fontSize={{ base: "14px", md: "14px" }}>
-                Developed by{" "}
-                <Link href="https://asvalabs.com/">
-                  {" "}
-                  <Image
-                    src="asvalogo.svg"
-                    alt="ASVALABS Logo"
-                    margin="auto"
-                    marginTop="10px"
-                  />
-                </Link>
-              </Text>
+            <Box display={'flex'} flexDir={'column'} gap={1} >
+            <Link href="/">
+              <Image
+                src="logo.svg"
+                alt="logo"
+                height={{ base: "20px", md: "24px" }}
+              />
+            </Link>
+            <Text fontSize={{ base: "12px", md: "14px" }} fontWeight={400}>Secondary Marketplace for Real World Assets</Text>
             </Box>
           </Box>
 
@@ -155,11 +150,25 @@ const Footer = () => {
  </Flex>
 
         </Flex>
+
+        <Flex gap={1} justify={'center'} alignItems={'center'} fontSize={{ base: "12px", md: "14px" }}>
+                Developed by{" "}
+                <Link href="https://asvalabs.com/">
+                  {" "}
+                  <Image
+                    src="asvalogo.svg"
+                    alt="ASVALABS Logo"
+                    height={{base:'17px',md:'19px'}}
+                  />
+                </Link>
+              </Flex>
       </Container>
 
       <Box className="absolute -z-10 -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
         <img src="/gradient/HeroCenter.svg" alt="hero" width="100%" />
       </Box>
+
+
     </Box>
   );
 };
