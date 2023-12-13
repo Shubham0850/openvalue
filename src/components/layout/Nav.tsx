@@ -80,7 +80,7 @@ function Nav() {
 
             {/* Hamburger icon for mobile */}
             <Box display={{ base: "block", md: "none" }} onClick={onOpen}>
-              <RxHamburgerMenu size={20} color="#121212" />
+              <RxHamburgerMenu size={24} color="#121212" />
             </Box>
 
             {/* Navbar links for larger screens */}
