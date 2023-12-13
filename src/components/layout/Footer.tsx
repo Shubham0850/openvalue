@@ -15,7 +15,7 @@ const Footer = () => {
       textDecoration: "none",
       opacity: "0.5",
       marginBottom: "4px",
-      fontSize: useBreakpointValue({base:'14px',md:'16px'}),
+      fontSize: useBreakpointValue({ base: "14px", md: "16px" }),
       color: "#121212",
       fontWeight: useBreakpointValue({ base: 300, md: 400 }),
     },
@@ -48,127 +48,131 @@ const Footer = () => {
             flex={{ base: "0 0 100%", md: "0 0 40%" }}
             mb={{ base: 8, md: 0 }}
           >
-            <Box display={'flex'} flexDir={'column'} gap={1} >
-            <Link href="/">
-              <Image
-                src="logo.svg"
-                alt="logo"
-                height={{ base: "20px", md: "24px" }}
-              />
-            </Link>
-            <Text fontSize={{ base: "12px", md: "14px" }} fontWeight={400}>Secondary Marketplace for Real World Assets</Text>
+            <Box display={"flex"} flexDir={"column"} gap={1}>
+              <Link href="/">
+                <Image
+                  src="logo.svg"
+                  alt="logo"
+                  height={{ base: "20px", md: "24px" }}
+                />
+              </Link>
+              <Text fontSize={{ base: "12px", md: "14px" }} fontWeight={400}>
+                Secondary Marketplace for Real World Assets
+              </Text>
             </Box>
           </Box>
 
-         <Flex w={'100%'} gap={{base:'44px',md:''}} justify={'space-between'} flexWrap={'wrap'}>
-       
           <Flex
-            direction="column"
-          
-            align={"flex-start"}
-            mb={{ base: 5, md: 0 }}
+            w={"100%"}
+            gap={{ base: "44px", md: "" }}
+            justify={"space-between"}
+            flexWrap={"wrap"}
           >
-            <Text
-              fontSize={"16px"}
-              fontWeight={{ base: 400, md: 700 }}
-              mb={{ base: "2", md: "4" }}
+            <Flex
+              direction="column"
+              align={"flex-start"}
+              mb={{ base: 5, md: 0 }}
             >
-              About
-            </Text>
+              <Text
+                fontSize={"16px"}
+                fontWeight={{ base: 400, md: 700 }}
+                mb={{ base: "2", md: "4" }}
+              >
+                About
+              </Text>
 
-            <Link
-              href="https://asvalabs.com/
+              <Link
+                href="https://asvalabs.com/
 "
-              style={style.link}
-            >
-              AsvaLabs
-            </Link>
-            <Link
-              href="https://asvalabs.notion.site/asvalabs/Asva-Labs-Careers-62d6bbac59854e3d8ad3bd97c2fceabc 
+                style={style.link}
+              >
+                AsvaLabs
+              </Link>
+              <Link
+                href="https://asvalabs.notion.site/asvalabs/Asva-Labs-Careers-62d6bbac59854e3d8ad3bd97c2fceabc 
 "
-              style={style.link}
+                style={style.link}
+              >
+                We are Hiring!
+              </Link>
+              <Link onClick={handleClick} style={style.link}>
+                Contact Us
+              </Link>
+            </Flex>
+            <Flex
+              direction="column"
+              align={"flex-start"}
+              mb={{ base: 5, md: 0 }}
             >
-              We are Hiring!
-            </Link>
-            <Link onClick={handleClick} style={style.link}>
-              Contact Us
-            </Link>
-          </Flex>
-          <Flex
-            direction="column"
-          
-            align={"flex-start"}
-            mb={{ base: 5, md: 0 }}
-          >
-            <Text
-              fontSize={"16px"}
-              fontWeight={{ base: 400, md: 700 }}
-              mb={{ base: "2", md: "4" }}
+              <Text
+                fontSize={"16px"}
+                fontWeight={{ base: 400, md: 700 }}
+                mb={{ base: "2", md: "4" }}
+              >
+                General
+              </Text>
+              <Link href="#buyers" style={style.link}>
+                Buyers
+              </Link>
+              <Link href="#asset" style={style.link}>
+                Asset Owners
+              </Link>
+              <Link href="#" style={style.link}>
+                Join Waitlist
+              </Link>
+            </Flex>
+            <Flex
+              direction="column"
+              align={"flex-start"}
+              mb={{ base: 5, md: 0 }}
             >
-              General
-            </Text>
-            <Link href="#buyers" style={style.link}>
-              Buyers
-            </Link>
-            <Link href="#asset" style={style.link}>
-              Asset Owners
-            </Link>
-            <Link href="#" style={style.link}>
-              Join Waitlist
-            </Link>
+              <Text
+                fontSize={"16px"}
+                fontWeight={{ base: 400, md: 700 }}
+                mb={{ base: "2", md: "4" }}
+              >
+                Socials
+              </Text>
+              <Link href="#" style={style.link}>
+                Twitter
+              </Link>
+              <Link href="#" style={style.link}>
+                Telegram
+              </Link>
+              <Link href="#" style={style.link}>
+                Linkedin
+              </Link>
+              <Link href="#" style={style.link}>
+                Discord
+              </Link>
+              <Link href="#" style={style.link}>
+                Medium
+              </Link>
+            </Flex>
           </Flex>
-          <Flex
-            direction="column"
-        
-            align={"flex-start"}
-            mb={{ base: 5, md: 0 }}
-          >
-            <Text
-              fontSize={"16px"}
-              fontWeight={{ base: 400, md: 700 }}
-              mb={{ base: "2", md: "4" }}
-            >
-              Socials
-            </Text>
-            <Link href="#" style={style.link}>
-              Twitter
-            </Link>
-            <Link href="#" style={style.link}>
-              Telegram
-            </Link>
-            <Link href="#" style={style.link}>
-              Linkedin
-            </Link>
-            <Link href="#" style={style.link}>
-              Discord
-            </Link>
-            <Link href="#" style={style.link}>
-              Medium
-            </Link>
-          </Flex>
-
- </Flex>
-
         </Flex>
 
-        <Flex gap={1} justify={'center'} alignItems={'center'} fontSize={{ base: "12px", md: "14px" }}>
-                Developed by{" "}
-                <Link href="https://asvalabs.com/">
-                  {" "}
-                  <Image
-                    src="asvalogo.svg"
-                    alt="ASVALABS Logo"
-                    height={{base:'17px',md:'19px'}}
-                  />
-                </Link>
-              </Flex>
+        <Flex
+          gap={1}
+          justify={"center"}
+          alignItems={"center"}
+          fontSize={{ base: "12px", md: "14px" }}
+        >
+          Developed by{" "}
+          <Link href="https://asvalabs.com/">
+            {" "}
+            <Image
+              src="asvalogo.svg"
+              alt="ASVALABS Logo"
+              height={{ base: "17px", md: "19px" }}
+            />
+          </Link>
+        </Flex>
       </Container>
 
       <Box className="absolute -z-10 -top-[50%] left-1/2 transform -translate-x-1/2 w-[100%]">
         <img src="/gradient/HeroCenter.svg" alt="hero" width="100%" />
       </Box>
-
-
     </Box>
   );
 };
