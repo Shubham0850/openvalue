@@ -145,7 +145,11 @@ function Nav() {
                       FAQs
                     </Link>
                     <hr style={styles.mobRow} />
-                    <Link href="#" sx={styles.mobLink}>
+                    <Link
+                    target="_blank"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfWIJ9wQpTP6IKLhzO25v4mFw276r24AXnYhIO-QbD-H6T-nA/viewform"
+                      sx={styles.mobLink}
+                    >
                       <button className="btn-outline">Join Waitlist</button>
                     </Link>
                   </Flex>
