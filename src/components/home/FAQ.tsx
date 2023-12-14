@@ -45,6 +45,12 @@ function AccordionItemComponent({
 }
 
 const FAQ = () => {
+
+  const emailAddress = "contact@asvalabs.com";
+
+  const handleClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
   return (
     <Box py={{ base: 8, md: 16 }} className="relative" id="faq">
       <Container maxW={1200} p={{ base: "5vh 0px", md: "10vh 0px" }}>
@@ -75,14 +81,14 @@ const FAQ = () => {
               width={{ base: "72%", md: "100%" }}
               margin="auto"
             >
-              {
-                "Got questions? If you don't find what you're looking for, feel free to contact us."
-              }
+              
+                Got questions? If you don&apos;t find what you&apos;re looking for, feel free to <Text onClick={handleClick} fontWeight={'bold'} cursor={'pointer'} as={'span'} >contact us</Text> .
+              
             </Text>
           </Box>
 
           {/* Right Side */}
-          <Accordion>
+          <Accordion allowMultiple >
             <AccordionItemComponent
               key="question1"
               question="What is asset tokenization?"

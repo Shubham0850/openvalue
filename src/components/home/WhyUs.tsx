@@ -11,8 +11,7 @@ function RenderReason({
   return (
     <Flex
       flexDirection="column"
-      align="center"
-      justify="center"
+     
       textAlign="center"
       width="100%"
       gap={{ md: "3" }}

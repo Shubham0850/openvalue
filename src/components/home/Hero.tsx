@@ -1,4 +1,5 @@
 import { Box, Heading, Text, Button, Container, Flex } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -31,7 +32,14 @@ const Hero = () => {
             instruments, real estate, precious metals, collectibles, and carbon
             credits
           </Text>
-          <button className="opposite-button ">Invest Now</button>
+          <Link
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSfWIJ9wQpTP6IKLhzO25v4mFw276r24AXnYhIO-QbD-H6T-nA/viewform "
+            }
+            target="_blank"
+          >
+            <button className="opposite-button ">Join Waitlist</button>
+          </Link>
         </Flex>
 
         <Box className="absolute -z-10 top-0 left-1/2 transform -translate-x-1/2">

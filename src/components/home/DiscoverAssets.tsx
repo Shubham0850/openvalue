@@ -16,35 +16,39 @@ const DiscoverAssets = () => {
 
   const assetData = [
     {
-      image: "/card.png",
-      heading: "Private Credit",
-      description:
-        "Access to tokenized private debt assets such as trade receivables, SMEs, and mortgage instruments. ",
-    },
-    {
-      image: "/creditcard.png",
-      heading: "Real Estate",
-      description:
-        "Explore the world of real estate investment without traditional barriers, with access to tokenized commercial and residential properties.",
-    },
-    {
-      image: "/realstate.png",
-      heading: "Precious Metals      ",
-      description:
-        "Secure your portfolio against inflation, invest in tokenized gold and other precious metals without worrying about storage or security.",
-    },
-    {
-      image: "/metals.png",
-      heading: "Bonds",
-      description:
-        "Broaden your investment horizons with access to high-quality bonds from reputable institutions worldwide, adding a stable component to your portfolio.",
-    },
-    {
       image: "/carbon.png",
       heading: "Carbon Credits",
       description:
         "Invest in the future of our planet with carbon credits, contributing to environmental sustainability while diversifying your portfolio.",
     },
+    {
+     
+      image: "/creditcard.png",
+      heading: "Private Credit",
+      description:
+        "Access to tokenized private debt assets such as trade receivables, SMEs, and mortgage instruments. ",
+    },
+    {
+      
+      image: "/realstate.png",
+      heading: "Real Estate",
+      description:
+        "Explore the world of real estate investment without traditional barriers, with access to tokenized commercial and residential properties.",
+    },
+    {  
+      
+      image: "/metals.png",
+      heading: "Precious Metals      ",
+      description:
+        "Secure your portfolio against inflation, invest in tokenized gold and other precious metals without worrying about storage or security.",
+    },
+    {
+      image: "/card.png",
+      heading: "Bonds",
+      description:
+        "Broaden your investment horizons with access to high-quality bonds from reputable institutions worldwide, adding a stable component to your portfolio.",
+    },
+   
     {
       image: "/collectible.png",
       heading: "Collectibles",

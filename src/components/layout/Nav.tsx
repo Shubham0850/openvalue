@@ -155,7 +155,10 @@ function Nav() {
 
             {/* Contact Button */}
             <Box display={{ base: "none", md: "block" }}>
-              <Link href="#">
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfWIJ9wQpTP6IKLhzO25v4mFw276r24AXnYhIO-QbD-H6T-nA/viewform "
+                target="_blank"
+              >
                 <button className="btn-outline">Join Waitlist</button>
               </Link>
             </Box>

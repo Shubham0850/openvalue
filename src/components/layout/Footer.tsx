@@ -82,20 +82,15 @@ const Footer = () => {
               </Text>
 
               <Link
+               target="_blank"
                 href="https://asvalabs.com/
 "
                 style={style.link}
               >
                 AsvaLabs
               </Link>
-              <Link
-                href="https://asvalabs.notion.site/asvalabs/Asva-Labs-Careers-62d6bbac59854e3d8ad3bd97c2fceabc 
-"
-                style={style.link}
-              >
-                We are Hiring!
-              </Link>
-              <Link onClick={handleClick} style={style.link}>
+            
+              <Link onClick={handleClick} target="_blank" style={style.link}>
                 Contact Us
               </Link>
             </Flex>
@@ -117,7 +112,7 @@ const Footer = () => {
               <Link href="#asset" style={style.link}>
                 Asset Owners
               </Link>
-              <Link href="#" style={style.link}>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfWIJ9wQpTP6IKLhzO25v4mFw276r24AXnYhIO-QbD-H6T-nA/viewform " style={style.link} target="_blank">
                 Join Waitlist
               </Link>
             </Flex>
@@ -126,6 +121,7 @@ const Footer = () => {
               align={"flex-start"}
               mb={{ base: 5, md: 0 }}
             >
+           
               <Text
                 fontSize={"16px"}
                 fontWeight={{ base: 400, md: 700 }}
@@ -133,19 +129,22 @@ const Footer = () => {
               >
                 Socials
               </Text>
-              <Link href="#" style={style.link}>
+              <Link href="https://twitter.com/Tangidocom " target="_blank" style={style.link}>
                 Twitter
               </Link>
-              <Link href="#" style={style.link}>
+              <Link href="https://t.me/AsvaLabsOfficial 
+" target="_blank" style={style.link}>
                 Telegram
               </Link>
-              <Link href="#" style={style.link}>
+              <Link href="https://www.linkedin.com/company/asvalabsofficial/ 
+" target="_blank" style={style.link}>
                 Linkedin
               </Link>
-              <Link href="#" style={style.link}>
+              <Link href="https://discord.gg/8R4aUFxp4j 
+" target="_blank" style={style.link}>
                 Discord
               </Link>
-              <Link href="#" style={style.link}>
+              <Link href="https://asvalabs.medium.com/ " target="_blank" style={style.link}>
                 Medium
               </Link>
             </Flex>
@@ -159,7 +158,7 @@ const Footer = () => {
           fontSize={{ base: "12px", md: "14px" }}
         >
           Developed by{" "}
-          <Link href="https://asvalabs.com/">
+          <Link href="https://asvalabs.com/" target="_blank">
             {" "}
             <Image
               src="asvalogo.svg"

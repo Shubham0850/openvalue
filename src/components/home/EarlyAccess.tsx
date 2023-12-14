@@ -1,4 +1,5 @@
 import { Box, Container, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 
 const EarlyAccess = () => {
@@ -26,7 +27,15 @@ const EarlyAccess = () => {
         >
           A Platform To Buy And Sell modernized Financial Assets
         </Text>
-        <button className="thin-button">Get Early Access</button>
+        <Link
+          href={
+            "https://docs.google.com/forms/d/e/1FAIpQLSfWIJ9wQpTP6IKLhzO25v4mFw276r24AXnYhIO-QbD-H6T-nA/viewform "
+          }
+          target="_blank"
+        >
+          <button className="thin-button" >Get Early Access</button>
+        </Link>
+        
       </Container>
     </Box>
   );

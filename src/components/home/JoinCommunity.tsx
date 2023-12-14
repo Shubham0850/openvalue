@@ -1,4 +1,5 @@
 import { Container, Box, Text, Flex, Image } from "@chakra-ui/react";
+import Link from "next/link";
 import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -40,19 +41,24 @@ const JoinCommunity = () => {
         gap={{ base: 4, md: 20 }}
       >
         <Flex gap={{ base: 14, md: 20 }} mb={{ base: "24px", md: "0px" }}>
-          <Box style={styles.background}>
-            <FaXTwitter style={{ fontSize: "46px", width: "46px" }} />
+          <Box style={styles.background} >
+            <Link href={' https://twitter.com/Tangidocom '} target="_blank"><FaXTwitter style={{ fontSize: "46px", width: "46px" }} /></Link>
+            
           </Box>
           <Box style={styles.background}>
-            <FaDiscord style={{ fontSize: "46px", width: "46px" }} />
+            <Link href={'https://discord.gg/8R4aUFxp4j '} target="_blank">
+              <FaDiscord style={{ fontSize: "46px", width: "46px" }} /></Link>
+            
           </Box>
         </Flex>
         <Flex gap={{ base: 14, md: 20 }}>
           <Box style={styles.background}>
-            <FaTelegramPlane style={{ fontSize: "46px", width: "46px" }} />
+            <Link href={'https://t.me/AsvaLabsOfficial '} target="_blank"> <FaTelegramPlane style={{ fontSize: "46px", width: "46px" }} /></Link>
+           
           </Box>
-          <Box style={styles.background}>
-            <Image src="blog.png" boxSize="46px" />
+          <Box style={styles.background}> 
+          <Link href={'https://asvalabs.medium.com/ '} target="_blank"> <Image src="blog.png" boxSize="46px" /></Link>
+         
           </Box>
         </Flex>
       </Flex>

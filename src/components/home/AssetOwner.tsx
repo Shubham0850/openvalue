@@ -61,7 +61,8 @@ function AssetOwner() {
           width={{ base: "73%" }}
           margin={"auto"}
         >
-          We Unlock Asset Issuers Navigate New Distribution Channels
+          We Offer Wide Range Of Assets To Buyers
+
         </Text>
       </Box>
       <Flex
@@ -109,19 +110,19 @@ function AssetOwner() {
       >
         <RenderReason
           key="data1"
-          title="Early Liquidation: "
+          title="Early Liquidation"
           description="We enable asset issuers to list their tokenized assets on our marketplace before maturity, providing an avenue for early liquidation and capital generation."
         />
 
         <RenderReason
           key="data2"
-          title="Price Discovery:"
+          title="Price Discovery"
           description="Our platform facilitates the creation of new markets for illiquid assets through tokenization. This leads to improved liquidity, easier trading access, and more accurate price discovery."
         />
 
         <RenderReason
           key="data2"
-          title="Global Investor Access:"
+          title="Global Investor Access"
           description="Our user-friendly onboarding process and global reach provide asset issuers with a diverse investor base, optimal pricing, and compliance assurance.
           "
         />
