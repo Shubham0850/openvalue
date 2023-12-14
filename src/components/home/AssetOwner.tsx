@@ -61,8 +61,7 @@ function AssetOwner() {
           width={{ base: "73%" }}
           margin={"auto"}
         >
-          We Offer Wide Range Of Assets To Buyers
-
+          We Unlock Distribution Channels For Asset Issuers
         </Text>
       </Box>
       <Flex

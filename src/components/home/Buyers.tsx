@@ -61,8 +61,7 @@ function Buyers() {
           width={{ base: "65%" }}
           margin="auto"
         >
-       Diverse And Inflation-Resistant Assets
-
+          We Offer Wide Range Of Assets To Buyers
         </Text>
       </Box>
       <Flex
@@ -122,7 +121,7 @@ function Buyers() {
 
         <RenderReason
           key="data2"
-          title="Inflation Resistant”"
+          title="Inflation Resistant"
           description="Our marketplace features assets that are designed to resist inflation, providing a robust investment portfolio that can weather various economic conditions."
         />
       </Flex>

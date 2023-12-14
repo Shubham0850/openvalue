@@ -81,14 +81,12 @@ const FAQ = () => {
               width={{ base: "72%", md: "100%" }}
               margin="auto"
             >
-              
                 Got questions? If you don&apos;t find what you&apos;re looking for, feel free to <Text onClick={handleClick} fontWeight={'bold'} cursor={'pointer'} as={'span'} >contact us</Text> .
-              
             </Text>
           </Box>
 
           {/* Right Side */}
-          <Accordion allowMultiple >
+          <Accordion allowToggle>
             <AccordionItemComponent
               key="question1"
               question="What is asset tokenization?"
