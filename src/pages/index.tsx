@@ -16,12 +16,11 @@ export default function Home() {
         <title>Tangido : Real World Asset Marketplace</title>
         <meta
           name="description"
-          content="Tangido is a secondary marketplace to trade real-world assets ranging from private credit, fixed debt instruments, real estate, precious metals, collectibles, and carbon credits
-          "
+          content="Tangido is a secondary marketplace to trade real-world assets ranging from private credit, fixed debt instruments, real estate, precious metals, collectibles, and carbon credits"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/ico.png" />
 
         <link
           rel="stylesheet"
